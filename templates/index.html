@@ -1,1 +1,143 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>RUSSIAN SETUP</title></head><body><h1>Placeholder</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RUSSIAN SETUP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #1f1f1f;
+        }
+
+        nav .left, nav .right {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #d3d3d3;
+        }
+
+        .hero button {
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #84c6c6;
+            border: none;
+            border-radius: 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .carousel-item {
+            padding: 3rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .slide-card {
+            max-width: 600px;
+            background: linear-gradient(135deg, #f0dcdc, #e9e3e3);
+            border-radius: 16px;
+            padding: 2rem;
+            color: #111;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+
+        .slide-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .slide-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-weight: 700;">RUSSIAN SETUP</div>
+        <div class="right">
+            <a href="https://t.me/lizaromanovnatutor" target="_blank">Book a trial lesson</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Discover the world of the Russian language</h1>
+        <p>Start learning Russian with our immersive program! Our professional tutors will help you master the language and explore rich Russian culture.</p>
+        <button><a href="https://t.me/lizaromanovnatutor" style="text-decoration: none;" target="_blank">Book a trial lesson</a></button>
+    </div>
+
+    <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="slide-card">
+                    <h2>About us</h2>
+                    <p>We help international students learn Russian using modern methods and a personalized approach. Our mission is to provide quality education and immerse students in Russian culture.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="slide-card">
+                    <h2>Pricing</h2>
+                    <p>We offer affordable 1-on-1 lessons with native tutors. Every lesson lasts 60 minutes and costs only <strong>$10</strong>. Your first 30-minute trial lesson is <strong>free</strong>.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
