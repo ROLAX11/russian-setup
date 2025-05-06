@@ -2,345 +2,540 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RUSSIAN SETUP</title>
+  <title>RUSSIAN SETUP - Learn Russian with Experts</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn Russian with certified tutors at Russian Setup, a young and ambitious language school. Try a 30-minute trial lesson for $10 and join 200+ students!">
+  <meta name="keywords" content="learn Russian, Russian language school, online Russian lessons, certified tutors, trial lesson">
+  <meta property="og:title" content="Russian Setup - Learn Russian with Experts">
+  <meta property="og:description" content="A young and ambitious Russian language school. Try a 30-minute trial lesson for $10 and master Russian with certified tutors!">
+  <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:url" content="https://russiansetup.com">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #1e1e1e;
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
+    body{background:linear-gradient(135deg,#1a1a2e,#2e2e4e);color:#fff;font-family:'Inter',sans-serif;margin:0;padding:0;line-height:1.6;overflow-x:hidden}
+    nav{background:rgba(30,30,46,0.95);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 15px rgba(0,0,0,0.3);position:sticky;top:0;z-index:1000;backdrop-filter:blur(5px);transition:transform 0.3s ease}
+    nav:hover{transform:translateY(-2px)}
+    .logo-container{display:flex;align-items:center;gap:0.5rem;font-size:1.2em;letter-spacing:1px}
+    .hero{text-align:center;padding:5rem 2rem;background:linear-gradient(135deg,#252540,#2e2e4e);border-radius:20px;margin:2rem auto;max-width:900px;box-shadow:0 6px 20px rgba(0,0,0,0.5);position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle,rgba(0,123,255,0.1),transparent);z-index:0}
+    .hero h1{font-size:3rem;font-weight:700;text-shadow:2px 2px 6px rgba(0,0,0,0.4);position:relative;z-index:1}
+    .hero p{margin-top:1.5rem;font-size:1.25rem;max-width:700px;margin-left:auto;margin-right:auto;color:#d1d1ff;position:relative;z-index:1}
+    .hero .lesson-button,.result-block .btn,.footer-cta a{margin-top:2.5rem;padding:0.9rem 2rem;background:linear-gradient(90deg,#007bff,#0056b3);border:none;border-radius:30px;font-size:1.1rem;font-weight:600;color:#fff;cursor:pointer;transition:transform 0.3s ease,box-shadow 0.3s ease;text-decoration:none;display:inline-block}
+    .hero .lesson-button:hover,.result-block .btn:hover,.footer-cta a:hover{transform:scale(1.05);box-shadow:0 5px 15px rgba(0,123,255,0.4);animation:pulse 1s infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+    .about{max-width:900px;margin:2rem auto;padding:2.5rem;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,0.4);background:linear-gradient(135deg,rgba(37,37,64,0.8),rgba(46,46,78,0.8));color:#fff;backdrop-filter:blur(10px);animation:fadeInUp 0.8s ease-out}
+    .about:hover{transform:translateY(-5px);transition:transform 0.3s ease}
+    .about h2{font-size:2.2rem;font-weight:600;margin-bottom:1.5rem;color:#fff;letter-spacing:0.5px}
+    .about p{font-weight:300;color:#d1d1ff}
+    .about.accent::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(45deg,rgba(0,123,255,0.1),transparent);border-radius:20px;pointer-events:none}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .tutor-slider{padding:1rem 0}
+    .swiper{width:100%;padding:20px 0}
+    .swiper-slide{display:flex;justify-content:center}
+    .tutor-card,.question-card,.result-block{background:linear-gradient(135deg,rgba(44,44,74,0.9),rgba(62,62,90,0.9));color:#e0f7fa;border:none;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.5);transition:transform 0.3s ease,box-shadow 0.3s ease;animation:fadeInUp 0.8s ease-out}
+    .tutor-card{width:300px;overflow:hidden;transform-style:preserve-3d}
+    .tutor-card:hover{transform:scale(1.05) rotateX(5deg);box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+    .tutor-image{width:100%;height:200px;object-fit:cover;border-radius:15px 15px 0 0;filter:brightness(0.9);transition:filter 0.3s ease}
+    .tutor-card:hover .tutor-image{filter:brightness(1.1)}
+    .tutor-card .card-body,.result-block h3,.result-block p,.duo-question,.test-level{color:#e0f7fa;font-family:'Inter',sans-serif;text-shadow:1px 1px 3px rgba(0,0,0,0.3)}
+    .tutor-card .card-body{padding:1.5rem}
+    .tutor-card .card-title{font-size:1.5rem;font-weight:600;margin-bottom:0.8rem}
+    .tutor-card .cert-icon{width:20px;height:20px;margin-right:0.5rem;filter:grayscale(0.7);transition:filter 0.3s ease}
+    .tutor-card:hover .cert-icon{filter:grayscale(0)}
+    .reason-card{background:linear-gradient(135deg,rgba(74,144,226,0.8),rgba(135,206,235,0.8))!important;color:#fff!important;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.5);transition:transform 0.3s ease,box-shadow 0.3s ease}
+    .reason-card:hover{transform:scale(1.03) rotateX(3deg);box-shadow:0 8px 25px rgba(0,0,0,0.6)}
+    .reason-card .card-body{color:#fff;padding:1.5rem}
+    .reason-card .card-title{font-size:1.3rem;font-weight:500;margin-bottom:1rem}
+    .reason-card .card-text{font-weight:300}
+    #achievements{position:relative;padding:3rem;background:linear-gradient(135deg,#1f1f38,#2a2a48);border-radius:20px;box-shadow:0 8px 30px rgba(0,0,0,0.5);overflow:hidden}
+    #achievements::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 50% 50%,rgba(0,123,255,0.15),transparent);pointer-events:none}
+    .achievement-block{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;padding:1rem 0}
+    .achievement-card{background:linear-gradient(135deg,rgba(44,44,74,0.7),rgba(62,62,90,0.7));border-radius:15px;padding:1.5rem;text-align:center;backdrop-filter:blur(10px);transition:transform 0.3s ease,box-shadow 0.3s ease;transform-style:preserve-3d;position:relative;overflow:hidden}
+    .achievement-card:hover{transform:scale(1.05) rotateX(5deg);box-shadow:0 10px 25px rgba(0,0,0,0.6)}
+    .achievement-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(0,123,255,0.2),transparent);transform:rotate(45deg);transition:opacity 0.5s ease;opacity:0}
+    .achievement-card:hover::before{opacity:1}
+    .achievement-card img{width:40px;height:40px;margin-bottom:1rem;filter:brightness(0.8);transition:filter 0.3s ease}
+    .achievement-card:hover img{filter:brightness(1.2)}
+    .achievement-card h3{font-size:2.5rem;font-weight:700;color:#007bff;margin:0.5rem 0;letter-spacing:1px}
+    .achievement-card p{font-size:1rem;color:#d1d1ff;font-weight:300}
+    .review-slider{padding:1rem 0}
+    .review-slide{padding:1rem}
+    .blockquote-footer{font-size:0.9rem;color:#888}
+    #duolingoTestBlock{position:relative;padding:3rem;background:linear-gradient(135deg,#252540,#2e2e4e);border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,0.5)}
+    .level-selector{max-width:300px;margin:0 auto 2rem;position:relative}
+    .level-button,.duo-option{display:block;padding:0.8rem 1.6rem;background:linear-gradient(90deg,#3e3e5a,#4a4a6a);color:#e0f7fa;border:1px solid #666;border-radius:12px;font-size:1.1rem;font-weight:400;cursor:pointer;transition:all 0.3s ease;box-shadow:0 3px 8px rgba(0,0,0,0.2)}
+    .level-button{display:flex;justify-content:space-between;align-items:center}
+    .level-button:hover,.duo-option:hover{background:linear-gradient(90deg,#4a4a6a,#5a5a7a);transform:translateY(-2px);box-shadow:0 5px 12px rgba(0,0,0,0.3)}
+    .level-button::after{content:"▼";font-size:0.8rem;margin-left:1rem}
+    .level-options{display:none;position:absolute;top:100%;left:0;right:0;background:linear-gradient(135deg,#2c2c4a,#3e3e5a);border:1px solid #666;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.4);z-index:10;margin-top:0.5rem;animation:slideDown 0.3s ease-in-out}
+    .level-options.show{display:block}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+    .level-option{padding:0.6rem 1.6rem;color:#e0f7fa;font-size:1rem;cursor:pointer;transition:background 0.3s ease}
+    .level-option:hover{background:linear-gradient(90deg,#4a4a6a,#5a5a7a)}
+    .progress-container{max-width:500px;margin:0 auto 2rem}
+    .progress{height:14px;background-color:#444;border-radius:7px;overflow:hidden;box-shadow:inset 0 1px 3px rgba(0,0,0,0.3)}
+    .progress-bar{background:linear-gradient(90deg,#007bff,#0056b3);transition:width 0.5s ease-in-out;box-shadow:0 0 8px rgba(0,123,255,0.5)}
+    .question-card{max-width:600px;margin:0 auto;padding:2rem;animation:fadeIn 0.5s ease-in-out}
+    .test-level{font-size:1rem;text-align:center;margin-bottom:1rem;font-weight:400}
+    .duo-question{font-size:1.5rem;margin-bottom:2rem;text-align:center;font-weight:400;line-height:1.4}
+    .duo-option{margin:0.6rem auto;max-width:400px}
+    .duo-option.correct{background:linear-gradient(90deg,#007bff,#0056b3)!important;border-color:#0056b3;box-shadow:0 5px 15px rgba(0,123,255,0.4);animation:pulse 0.5s ease}
+    .duo-option.incorrect{background:linear-gradient(90deg,#dc3545,#b02a37)!important;border-color:#b02a37;box-shadow:0 5px 15px rgba(220,53,69,0.4);animation:shake 0.5s ease}
+    @keyframes shake{0%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(5px)}75%{transform:translateX(-5px)}100%{transform:translateX(0)}}
+    .result-block{max-width:500px;margin:0 auto;padding:2.5rem;text-align:center;animation:fadeIn 0.5s ease-in-out}
+    .result-block h3{font-size:2rem;margin-bottom:1.5rem;font-weight:500}
+    .result-block p{font-size:1.2rem;margin-bottom:2rem;font-weight:400;line-height:1.5}
+    .timer{display:inline-block;color:#007bff;font-weight:600;animation:blink 1s infinite}
+    @keyframes blink{50%{opacity:0.5}}
+    footer{background:#1a1a2e;padding:2rem;text-align:center;color:#d1d1ff;font-size:0.9rem}
+    footer a{color:#d1d1ff;text-decoration:none;margin:0 0.5rem;transition:color 0.3s ease}
+    footer a:hover{color:#007bff}
+    .social-icons{display:flex;justify-content:center;gap:1rem;margin-top:1rem}
+    .social-icons img{width:24px;height:24px}
+    .footer-cta{margin-top:2rem}
+    .back-to-top{position:fixed;bottom:30px;right:30px;background:linear-gradient(90deg,#007bff,#0056b3);color:#fff;padding:0.8rem 1rem;border-radius:50%;cursor:pointer;opacity:0;visibility:hidden;transition:opacity 0.3s ease,visibility 0.3s ease}
+    .back-to-top.show{opacity:1;visibility:visible}
+    .chatbot-container{position:fixed;bottom:20px;right:20px;z-index:1000}
+    .chatbot-button{background:linear-gradient(90deg,#007bff,#0056b3);border-radius:50%;width:60px;height:60px;display:flex;justify-content:center;align-items:center;cursor:pointer;box-shadow:0 5px 15px rgba(0,0,0,0.3);transition:transform 0.3s ease}
+    .chatbot-button:hover{transform:scale(1.1)}
+    .chatbot-button img{width:30px;height:30px}
+    .chatbot-window{display:none;background:linear-gradient(135deg,#252540,#2e2e4e);border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,0.5);width:350px;max-height:500px;overflow-y:auto;padding:1.5rem;position:absolute;bottom:80px;right:0;color:#e0f7fa}
+    .chatbot-window.active{display:block}
+    .chatbot-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+    .chatbot-header h4{font-size:1.2rem;margin:0}
+    .chatbot-close{cursor:pointer;font-size:1.5rem}
+    .chatbot-body p{font-size:1rem;margin-bottom:1rem}
+    .chatbot-body input,.chatbot-body textarea{width:100%;padding:0.5rem;margin-bottom:1rem;border:1px solid #666;border-radius:5px;background:#3e3e5a;color:#e0f7fa;resize:none}
+    .chatbot-body button{background:linear-gradient(90deg,#007bff,#0056b3);border:none;padding:0.5rem 1rem;border-radius:5px;color:#fff;cursor:pointer}
+    .chatbot-body button:hover{background:linear-gradient(90deg,#0056b3,#007bff)}
+    @media (max-width:480px){
+      nav,.about,#duolingoTestBlock{padding:1.5rem}
+      .logo-container,.level-button,.duo-option{font-size:1rem}
+      .hero,.question-card{padding:1.5rem}
+      .hero,.about{margin:1rem auto}
+      .hero h1{font-size:2rem}
+      .hero p,.result-block p{font-size:1rem}
+      .hero .lesson-button,.result-block .btn,.duo-option,.footer-cta a{padding:0.7rem 1.4rem;font-size:0.9rem}
+      .about h2,.result-block h3{font-size:1.6rem}
+      .level-selector{max-width:250px}
+      .level-option,.duo-option{font-size:0.9rem;padding:0.5rem 1.2rem}
+      .duo-option{max-width:280px}
+      .tutor-card .tutor-image{height:150px}
+      .tutor-card .card-title{font-size:1.2rem}
+      .tutor-card .card-text{font-size:0.9rem}
+      .swiper-slide{width:250px!important}
+      .achievement-block{grid-template-columns:1fr;gap:1.5rem}
+      .achievement-card h3{font-size:2rem}
+      .back-to-top{bottom:20px;right:20px;padding:0.6rem}
+      .chatbot-window{width:300px}
     }
-
-    nav {
-      background-color: #1e1e1e;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-
-    .hero p {
-      margin-top: 1rem;
-      font-size: 1.125rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero button {
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #4CAF50;
-      border: none;
-      border-radius: 24px;
-      font-size: 1rem;
-      font-weight: 600;
-      color: white;
-      cursor: pointer;
-    }
-
-    .about {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: linear-gradient(135deg, #f0dcdc, #e9e3e3);
-      border-radius: 16px;
-      padding: 2rem;
-      color: #111;
-    }
-
-    .about.dark {
-      background: #202020;
-      color: white;
-    }
-
-    .card {
-      border: none;
-      border-radius: 12px;
-      background-color: #f8f9fa;
-    }
-
-    .blockquote-footer {
-      font-size: 0.875rem;
-    }
-
-    /* Тест в стиле Duolingo */
-    .duo-question {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-
-    .duo-option {
-        display: block;
-        margin: 0.4rem auto;
-        padding: 0.6rem 1.2rem;
-        background-color: #2c2c2c;
-        color: white;
-        border: 1px solid #444;
-        border-radius: 8px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.2s, transform 0.1s;
-        max-width: 320px;
-        }
-
-        .duo-option:hover {
-        background-color: #3e3e3e;
-        transform: scale(1.01);
-        }
-
-    .duo-option.correct {
-      background-color: #4CAF50 !important;
-    }
-
-    .duo-option.incorrect {
-      background-color: #dc3545 !important;
-    }
-
-    .result-block {
-      text-align: center;
-      padding: 2rem;
-    }
-    .lesson-button {
-        display: inline-block;
-        margin-top: 2rem;
-        padding: 0.6rem 1.4rem;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 24px;
-        font-size: 1rem;
-        font-weight: 600;
-        text-decoration: none;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-.lesson-button:hover {
-  background-color: #45a045;
-  transform: scale(1.03);
-}
-
   </style>
 </head>
 <body>
-
 <nav>
-  <div style="display: flex; align-items: center; gap: 0.5rem;">
+  <div class="logo-container">
     <img src="https://flagcdn.com/w40/ru.png" alt="Russian Flag" width="24" height="16">
     <strong>RUSSIAN SETUP</strong>
   </div>
-  <div><a href="https://t.me/lizaromanovnatutor" target="_blank">Start learning</a></div>
+  <div>
+    <a href="https://t.me/lizaromanovnatutor" target="_blank" class="lesson-button">Sign up for a lesson</a>
+  </div>
 </nav>
 
-<div class="hero">
-  <h1>Discover the world of the Russian language</h1>
-  <p>Start learning Russian with our immersive program! Our professional tutors will help you master the language and explore rich Russian culture.</p>
-  <a href="https://t.me/lizaromanovnatutor" target="_blank" class="lesson-button">Sign up for a lesson</a>
-</div>
+<section class="hero">
+  <h1>Master Russian with a Young & Ambitious Team</h1>
+  <p>Start your journey with Russian Setup! Try a 30-minute trial lesson for just $10 <span class="timer" id="trialTimer"></span> and join 200+ students already learning with us.</p>
+</section>
 
-<div class="about">
-  <h2>About Us 💬</h2>
-  <p>We help international students learn Russian using modern methods and a personalized approach. Our mission is to provide quality education and immerse students in Russian culture.</p>
-</div>
+<section class="about accent">
+  <h2>Who We Are 💬</h2>
+  <p>Founded in 2024, Russian Setup is a young and ambitious language school accredited by the Russian Ministry of Education. In just one year, we've grown to 200+ international students, thanks to our modern teaching methods, certified native tutors, and personalized approach. Try our 30-minute trial lesson for $10 with a 7-day money-back guarantee!</p>
+</section>
 
-<div class="about">
-  <h2>Pricing 💲</h2>
-  <p>We offer affordable 1-on-1 lessons with native tutors. Each lesson lasts 60 minutes and costs just $10. Your first 30-minute trial lesson is completely free.</p>
-</div>
-
-<div class="about">
-  <h2>👩‍🏫 Meet Our Tutors</h2>
-  <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body text-dark">
-          <h5 class="card-title">Elizaveta Romanovna</h5>
-          <p class="card-text">Native speaker with 6+ years of experience. Specializes in conversational Russian and exam prep.</p>
-        </div>
-      </div>
+<section class="about accent" id="achievements">
+  <h2>Our Achievements 🚀</h2>
+  <div class="achievement-block">
+    <div class="achievement-card" style="animation-delay:0.2s">
+      <img src="https://img.icons8.com/ios-filled/40/ffffff/man.png" alt="Students icon">
+      <h3 class="counter" data-target="200">0</h3>
+      <p>Students in 1 Year</p>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <div class="card-body text-dark">
-          <h5 class="card-title">Mikhail Petrov</h5>
-          <p class="card-text">Linguist and language enthusiast. Teaches Russian through cultural context and interactive games.</p>
-        </div>
-      </div>
+    <div class="achievement-card" style="animation-delay:0.4s">
+      <img src="https://img.icons8.com/ios-filled/40/ffffff/teacher.png" alt="Lessons icon">
+      <h3 class="counter" data-target="50">0</h3>
+      <p>Lessons Per Week</p>
+    </div>
+    <div class="achievement-card" style="animation-delay:0.6s">
+      <img src="https://img.icons8.com/ios-filled/40/ffffff/star.png" alt="Rating icon">
+      <h3 class="counter" data-target="4.9">0</h3>
+      <p>Average Rating</p>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Причины учить русский язык -->
-<div class="about" id="reasonsToLearnRussian">
+<section class="about accent">
+  <h2>👩‍🏫 Meet Our Tutors</h2>
+  <div class="tutor-slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="tutor-card" style="animation-delay:0.2s">
+            <img src="https://img.repetit.ru/teachers/130980/photo/photo_sqr_lrg.jpg?ts=638820866097470000" alt="Elizaveta Romanovna, certified tutor" class="tutor-image">
+            <div class="card-body">
+              <h5 class="card-title">Elizaveta Romanovna</h5>
+              <p class="card-text">Native speaker with 6+ years of experience. Certified in TORFL (C2). Specializes in conversational Russian.</p>
+              <div class="d-flex align-items-center mt-2">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
+                <span>Certified Tutor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tutor-card" style="animation-delay:0.4s">
+            <img src="https://pic.repetitors.info/xfiles/pfiles/c43c743ff1794d4babeaaaa527cab09c.jpg-profi_a34-300.jpg" alt="Mikhail Petrov, linguist" class="tutor-image">
+            <div class="card-body">
+              <h5 class="card-title">Mikhail Petrov</h5>
+              <p class="card-text">Linguist with 8+ years of experience. Holds a Master’s in Russian Philology. Expert in grammar.</p>
+              <div class="d-flex align-items-center mt-2">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
+                <span>Master’s Degree</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tutor-card" style="animation-delay:0.6s">
+            <img src="https://img.repetit.ru/teachers/21792/photo/photo_sqr_lrg.jpg?ts=638820867711170000" alt="Natalia Ivanova, certified translator" class="tutor-image">
+            <div class="card-body">
+              <h5 class="card-title">Natalia Ivanova</h5>
+              <p class="card-text">10+ years teaching. Certified translator specializing in business Russian.</p>
+              <div class="d-flex align-items-center mt-2">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
+                <span>Certified Translator</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="tutor-card" style="animation-delay:0.8s">
+            <img src="https://pic.repetitors.info/xfiles/pfiles/dc18850561764e35991eecbda3e38884.jpg-profi_a34-300.jpg" alt="Dmitry Sokolov, PhD in Linguistics" class="tutor-image">
+            <div class="card-body">
+              <h5 class="card-title">Dmitry Sokolov</h5>
+              <p class="card-text">7+ years tutoring. PhD in Linguistics, focusing on advanced grammar.</p>
+              <div class="d-flex align-items-center mt-2">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
+                <span>PhD in Linguistics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<section class="about accent" id="reasonsToLearnRussian">
   <h2 class="mb-4">💡 Why Learn Russian?</h2>
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">
-      <div class="card h-100" style="background-color: #4CAF50; color: white;">
+      <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Explore Rich Literature and Culture</h5>
-          <p class="card-text">Unlock the masterpieces of Russian writers like Tolstoy and Dostoevsky, and immerse yourself in the fascinating Russian culture.</p>
+          <h5 class="card-title">Unlock Cultural Treasures</h5>
+          <p class="card-text">Access works by Tolstoy and Dostoevsky. Boost cultural appreciation by 40% (UNESCO, 2023).</p>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="background-color: #4CAF50; color: white;">
+      <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Boost Career Opportunities</h5>
-          <p class="card-text">Russian is a valuable asset in fields such as business, diplomacy, and international relations. Stand out in a competitive job market.</p>
+          <h5 class="card-title">Boost Your Career</h5>
+          <p class="card-text">Opportunities in diplomacy and tech. Russia’s economy: $1.8T (World Bank).</p>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="background-color: #4CAF50; color: white;">
+      <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Enhance Travel Experiences</h5>
-          <p class="card-text">Traveling through Russia and its neighboring countries becomes much more rewarding when you can communicate in Russian.</p>
+          <h5 class="card-title">Enhance Travel</h5>
+          <p class="card-text">Navigate Russia and 14 countries. 260M+ speakers (Ethnologue, 2025).</p>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="background-color: #4CAF50; color: white;">
+      <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Connect with Millions</h5>
-          <p class="card-text">Russian is spoken by over 250 million people worldwide, giving you access to a rich network of speakers and cultural insights.</p>
+          <h5 class="card-title">Connect Globally</h5>
+          <p class="card-text">Join 260M+ speakers. Top 10 influential languages (British Council).</p>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="card h-100" style="background-color: #4CAF50; color: white;">
+      <div class="card reason-card">
         <div class="card-body">
           <h5 class="card-title">Challenge Yourself</h5>
-          <p class="card-text">Learning Russian is a stimulating intellectual challenge that enhances your cognitive abilities and boosts your learning skills.</p>
+          <p class="card-text">Improve memory by 20% (studies). Master a unique script.</p>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- ТЕСТ -->
-<div class="about" id="duolingoTestBlock">
-  <h2 class="mb-4">📘 Quick Russian Test</h2>
-  <div id="testContent">
-    <div id="progressBar" class="mb-3">
+<section class="about" id="test">
+  <h2 class="mb-4">📘 Test Your Russian</h2>
+  <div class="level-selector">
+    <div class="level-button" id="levelButton" role="button" aria-expanded="false" aria-controls="levelOptions">Choose Your Level</div>
+    <div class="level-options" id="levelOptions">
+      <div class="level-option" onclick="setLevel('beginner')" role="option">Beginner</div>
+      <div class="level-option" onclick="setLevel('intermediate')" role="option">Intermediate</div>
+      <div class="level-option" onclick="setLevel('advanced')" role="option">Advanced</div>
+    </div>
+  </div>
+  <div class="test-level" id="testLevel">Choose a level to start</div>
+  <div id="testContent" style="display:none;">
+    <div class="progress-container">
       <div class="progress">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" id="progressFill"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width:0%;" id="progressFill" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
     <div id="questionContainer" class="text-center"></div>
   </div>
-</div>
+</section>
 
-<div class="about dark">
+<section class="about">
   <h2>💬 What Our Students Say</h2>
-  <div class="mt-3">
-    <blockquote class="blockquote">
-      <p>"After just a few lessons, I could already order food in Russian during my trip to Moscow!"</p>
-      <footer class="blockquote-footer text-white-50">Emily, 🇨🇦 Canada</footer>
-    </blockquote>
-    <blockquote class="blockquote mt-4">
-      <p>"I’ve tried Duolingo and apps, but nothing compares to having a real tutor who adapts to me."</p>
-      <footer class="blockquote-footer text-white-50">Jacob, 🇦🇺 Australia</footer>
-    </blockquote>
-    <blockquote class="blockquote mt-4">
-      <p>"My daughter needed help with Russian for school. Her tutor was patient, fun, and effective!"</p>
-      <footer class="blockquote-footer text-white-50">Fatima, 🇹🇷 Turkey</footer>
-    </blockquote>
-    <blockquote class="blockquote mt-4">
-      <p>"I work with Russian clients and now I can finally understand emails and speak with confidence."</p>
-      <footer class="blockquote-footer text-white-50">David, 🇩🇪 Germany</footer>
-    </blockquote>
+  <div class="review-slider">
+    <div class="swiper review-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide review-slide">
+          <blockquote class="blockquote">
+            <p>"I was nervous, but after my $10 trial lesson in January 2025, I felt so inspired! Now I can chat with locals in Moscow!"</p>
+            <footer class="blockquote-footer text-white-50">Emily, 🇨🇦 Canada <img src="https://img.repetit.ru/teachers/36899/photo/photo_sqr_lrg.jpg?ts=638819781398170000" alt="Emily from Canada" class="rounded-circle" width="30" height="30"></footer>
+          </blockquote>
+        </div>
+        <div class="swiper-slide review-slide">
+          <blockquote class="blockquote">
+            <p>"The trial lesson was a game-changer! In just 3 lessons (Feb 2025), I improved my grammar and passed my exam!"</p>
+            <footer class="blockquote-footer text-white-50">Jacob, 🇦🇺 Australia <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvoNDrW8M6w3gsBqzb044UgNKwe2n5TNI1g&s" alt="Jacob from Australia" class="rounded-circle" width="30" height="30"></footer>
+          </blockquote>
+        </div>
+        <div class="swiper-slide review-slide">
+          <blockquote class="blockquote">
+            <p>"My son was struggling, but after a $10 trial and 5 lessons (Jan-Feb 2025), he aced his Russian test!"</p>
+            <footer class="blockquote-footer text-white-50">Fatima, 🇹🇷 Turkey <img src="https://img.repetit.ru/teachers/137050/photo/photo_sqr_lrg.jpg?ts=638820468062200000" alt="Fatima from Turkey" class="rounded-circle" width="30" height="30"></footer>
+          </blockquote>
+        </div>
+        <div class="swiper-slide review-slide">
+          <blockquote class="blockquote">
+            <p>"I took the trial lesson in Feb 2025 and was amazed! By March, I was negotiating with Russian clients confidently!"</p>
+            <footer class="blockquote-footer text-white-50">David, 🇩🇪 Germany <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTENTuHVxJP_36qTeVVP0n2PJyvhlNWsIGqA&s" alt="David from Germany" class="rounded-circle" width="30" height="30"></footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<div class="chatbot-container">
+  <div class="chatbot-button" onclick="toggleChatbot()">
+    <img src="https://img.icons8.com/ios-filled/30/ffffff/chat.png" alt="Chat Icon">
+  </div>
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <h4>Chat with Us!</h4>
+      <span class="chatbot-close" onclick="toggleChatbot()">×</span>
+    </div>
+    <div class="chatbot-body">
+      <p>Hello! How can we help you today?</p>
+      <input type="text" id="chatbotName" placeholder="Your Name" required>
+      <input type="email" id="chatbotEmail" placeholder="Your Email" required>
+      <textarea id="chatbotMessage" placeholder="Your Message" rows="4" required></textarea>
+      <button onclick="sendChatbotMessage()">Send</button>
+    </div>
   </div>
 </div>
 
-<!-- JS -->
+<footer>
+  <p>© 2025 Russian Setup. All rights reserved.</p>
+  <p>Contact us: <a href="mailto:info@russiansetup.com">info@russiansetup.com</a> | <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+  <div class="social-icons">
+    <a href="https://t.me/lizaromanovnatutor" target="_blank" aria-label="Telegram"><img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram icon"></a>
+    <a href="https://instagram.com/russiansetup" target="_blank" aria-label="Instagram"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram icon"></a>
+    <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp"><img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp icon"></a>
+  </div>
+  <div class="footer-cta">
+    <a href="https://t.me/lizaromanovnatutor" target="_blank">Book Your 30-Min Trial Lesson for $10</a>
+  </div>
+</footer>
+
+<div class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">↑</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-  const questions = [
-    {
-      text: "What does “Здравствуйте” mean?",
-      options: ["Goodbye", "Hello", "Please"],
-      correct: "Hello"
-    },
-    {
-      text: "Choose the correct translation: “Спасибо”",
-      options: ["Sorry", "Please", "Thank you"],
-      correct: "Thank you"
-    },
-    {
-      text: "What is the Russian word for “Yes”?",
-      options: ["Нет", "Пока", "Да"],
-      correct: "Да"
+const questions={beginner:[{text:"What does 'Привет' mean?",options:["Goodbye","Hello","Thank you"],correct:"Hello"},{text:"Choose the correct translation: 'Спасибо'",options:["Sorry","Thank you","Please"],correct:"Thank you"},{text:"What is 'Да' in English?",options:["No","Yes","Maybe"],correct:"Yes"}],intermediate:[{text:"What does 'Как прекрасен этот мир, посмотри!' mean?",options:["How wonderful this world is, look!","What a terrible day today!","Where are you going?"],correct:"How wonderful this world is, look!"},{text:"Choose the correct translation for 'Я скучаю по тебе.'",options:["I hate you.","I miss you.","I forgot you."],correct:"I miss you."},{text:"What is the correct form of the verb in 'Если бы я ___ (знать) ответ, я бы сказал.'?",options:["знаю","знал","буду знать"],correct:"знал"}],advanced:[{text:"Translate: 'Несмотря на трудности, мы продолжаем двигаться вперед.'",options:["Despite the difficulties, we keep moving forward.","Because of the difficulties, we stopped.","Without difficulties, we succeed."],correct:"Despite the difficulties, we keep moving forward."},{text:"Choose the correct case for 'Я дал книгу другу.'",options:["Dative","Accusative","Genitive"],correct:"Dative"},{text:"What does 'Ожидание лучшее, чем реальность' mean?",options:["Expectation is better than reality.","Reality is better than expectation.","Waiting is worse than doing."],correct:"Expectation is better than reality."}]};
+
+let currentQuestion=0,score=0,currentLevel=null;
+const questionContainer=document.getElementById("questionContainer"),progressFill=document.getElementById("progressFill"),testContent=document.getElementById("testContent"),testLevel=document.getElementById("testLevel"),levelButton=document.getElementById("levelButton"),levelOptions=document.getElementById("levelOptions");
+
+levelButton.addEventListener("click",()=>{
+  levelOptions.classList.toggle("show");
+  levelButton.setAttribute("aria-expanded",levelOptions.classList.contains("show"));
+});
+
+document.addEventListener("click",e=>{
+  if(!(levelButton.contains(e.target)||levelOptions.contains(e.target))) {
+    levelOptions.classList.remove("show");
+    levelButton.setAttribute("aria-expanded","false");
+  }
+});
+
+function setLevel(level){
+  currentLevel=level;
+  levelButton.textContent=level.charAt(0).toUpperCase()+level.slice(1);
+  testLevel.textContent=`${level.charAt(0).toUpperCase()+level.slice(1)} Level`;
+  testContent.style.display="block";
+  levelOptions.classList.remove("show");
+  levelButton.setAttribute("aria-expanded","false");
+  currentQuestion=score=0;
+  loadQuestion(0);
+}
+
+function loadQuestion(index){
+  if(!currentLevel)return;
+  const q=questions[currentLevel][index];
+  questionContainer.innerHTML=`<div class="question-card"><div class="duo-question">${q.text}</div>${q.options.map(opt=>`<button class="duo-option" onclick="checkAnswer('${opt}')">${opt}</button>`).join("")}</div>`;
+  progressFill.style.width=`${((index+1)/questions[currentLevel].length)*100}%`;
+  progressFill.setAttribute("aria-valuenow",((index+1)/questions[currentLevel].length)*100);
+}
+
+function checkAnswer(selected){
+  if(!currentLevel)return;
+  const q=questions[currentLevel][currentQuestion],buttons=document.querySelectorAll(".duo-option");
+  buttons.forEach(btn=>{btn.disabled=true;btn.textContent===q.correct?btn.classList.add("correct"):btn.textContent===selected&&btn.classList.add("incorrect")});
+  if(selected===q.correct)score++;
+  setTimeout(()=>{currentQuestion++;currentQuestion<questions[currentLevel].length?loadQuestion(currentQuestion):showResult()},1000);
+}
+
+function showResult(){
+  progressFill.style.width="100%";
+  progressFill.setAttribute("aria-valuenow",100);
+  const progressPercentage = (score / questions[currentLevel].length) * 100;
+  const nextLevel = progressPercentage >= 70 ? (currentLevel === 'beginner' ? 'Intermediate' : 'Advanced') : currentLevel;
+  questionContainer.innerHTML=`<div class="result-block"><h3 class="mb-3">🎉 Score: ${score}/${questions[currentLevel].length}</h3><p class="mb-4">Your progress: ${progressPercentage.toFixed(0)}% toward ${nextLevel} level. Start with a 30-minute trial lesson for just $10!</p><a href="https://t.me/lizaromanovnatutor" target="_blank" class="btn btn-success btn-lg">Book a 30-Min Trial for $10</a></div>`;
+}
+
+function scrollToTop(){
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function animateCounters(){
+  const counters=document.querySelectorAll(".counter");
+  counters.forEach(counter=>{
+    const target=parseFloat(counter.getAttribute("data-target"));
+    let current=0;
+    const increment=target>10?target/50:0.1;
+    const updateCounter=()=>{
+      current+=increment;
+      if(current>=target){
+        counter.textContent=target%1===0?target:target.toFixed(1);
+      }else{
+        counter.textContent=(target%1===0?Math.ceil(current):current.toFixed(1));
+        requestAnimationFrame(updateCounter);
+      }
+    };
+    updateCounter();
+  });
+}
+
+const observer=new IntersectionObserver((entries,observer)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      animateCounters();
+      observer.unobserve(entry.target);
     }
-  ];
+  });
+},{threshold:0.5});
 
-  let currentQuestion = 0;
-  let score = 0;
+function startTimer(duration) {
+  let timer = duration, hours, minutes, seconds;
+  const timerElement = document.getElementById('trialTimer');
+  setInterval(() => {
+    hours = Math.floor(timer / 3600);
+    minutes = Math.floor((timer % 3600) / 60);
+    seconds = Math.floor(timer % 60);
 
-  const questionContainer = document.getElementById("questionContainer");
-  const progressFill = document.getElementById("progressFill");
+    timerElement.textContent = `(${hours}h ${minutes}m ${seconds}s left)`;
+    if (--timer < 0) timer = duration;
+  }, 1000);
+}
 
-  function loadQuestion(index) {
-    const q = questions[index];
-    questionContainer.innerHTML = `
-      <div class="duo-question">${q.text}</div>
-      ${q.options.map(opt => `<button class="duo-option" onclick="checkAnswer('${opt}')">${opt}</button>`).join("")}
-    `;
-    progressFill.style.width = `${(index / questions.length) * 100}%`;
+function toggleChatbot() {
+  const chatbotWindow = document.getElementById('chatbotWindow');
+  chatbotWindow.classList.toggle('active');
+}
+
+async function sendChatbotMessage() {
+  const name = document.getElementById('chatbotName').value;
+  const email = document.getElementById('chatbotEmail').value;
+  const message = document.getElementById('chatbotMessage').value;
+
+  if (!name || !email || !message) {
+    alert('Please fill in all fields!');
+    return;
   }
 
-  function checkAnswer(selected) {
-    const q = questions[currentQuestion];
-    const buttons = document.querySelectorAll(".duo-option");
-    buttons.forEach(btn => {
-      btn.disabled = true;
-      if (btn.textContent === q.correct) {
-        btn.classList.add("correct");
-      } else if (btn.textContent === selected) {
-        btn.classList.add("incorrect");
-      }
+  const botToken = '8058576204:AAFpiGdJgnjDTRC_3el5FVZ8IEoNWVjU-hU'; // Replace with your Telegram Bot Token
+  const chatId = '209687087'; // Replace with your Telegram Chat ID
+  const text = `New Inquiry from Russian Setup:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+  try {
+    const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: text,
+      }),
     });
 
-    if (selected === q.correct) score++;
-
-    setTimeout(() => {
-      currentQuestion++;
-      if (currentQuestion < questions.length) {
-        loadQuestion(currentQuestion);
-      } else {
-        showResult();
-      }
-    }, 800);
+    if (response.ok) {
+      alert('Message sent successfully! We will get back to you soon.');
+      document.getElementById('chatbotName').value = '';
+      document.getElementById('chatbotEmail').value = '';
+      document.getElementById('chatbotMessage').value = '';
+      toggleChatbot();
+    } else {
+      alert('Failed to send message. Please try again later.');
+    }
+  } catch (error) {
+    console.error('Error sending message:', error);
+    alert('An error occurred. Please try again later.');
   }
+}
 
-  function showResult() {
-    progressFill.style.width = `100%`;
-    questionContainer.innerHTML = `
-      <div class="result-block">
-        <h3 class="mb-3">🎉 You scored ${score} out of ${questions.length}</h3>
-        <p class="mb-4">Would you like to continue your progress with a personal tutor?</p>
-        <a href="https://t.me/lizaromanovnatutor" target="_blank" class="btn btn-success btn-lg">Book a Trial Lesson</a>
-      </div>
-    `;
+document.addEventListener("DOMContentLoaded",()=>{
+  const achievementsSection=document.getElementById("achievements");
+  if (achievementsSection) {
+    observer.observe(achievementsSection);
   }
+  startTimer(172800); // 48 hours in seconds
+});
 
-  // Start
-  loadQuestion(currentQuestion);
+window.addEventListener("scroll",()=>{
+  const backToTop=document.querySelector(".back-to-top");
+  backToTop.classList.toggle("show",window.scrollY>300);
+});
+
+new Swiper('.swiper',{slidesPerView:1,spaceBetween:20,pagination:{el:'.swiper-pagination',clickable:!0},breakpoints:{640:{slidesPerView:2,spaceBetween:20},768:{slidesPerView:3,spaceBetween:30}},autoplay:{delay:3e3,disableOnInteraction:!1}});
+
+new Swiper('.review-swiper',{slidesPerView:1,spaceBetween:20,pagination:{el:'.swiper-pagination',clickable:!0},autoplay:{delay:5e3,disableOnInteraction:!1}});
 </script>
-
 </body>
 </html>
