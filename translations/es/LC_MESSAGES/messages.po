@@ -1,0 +1,21 @@
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Subject"
+msgstr "Asignatura"
+
+msgid "Location"
+msgstr "Ubicación"
+
+msgid "Find tutors"
+msgstr "Buscar profesores"
+
+msgid "Tutors"
+msgstr "Profesores"
+
+msgid "Price"
+msgstr "Precio"
+
+msgid "Rating"
+msgstr "Calificación"

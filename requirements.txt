@@ -1,2 +1,5 @@
 Flask
-gunicorn
+Flask-Babel
+Babel
+python-telegram-bot==20.7
+python-dotenv

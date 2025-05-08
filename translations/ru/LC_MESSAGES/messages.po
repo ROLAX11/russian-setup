@@ -1,0 +1,21 @@
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Subject"
+msgstr "Предмет"
+
+msgid "Location"
+msgstr "Местоположение"
+
+msgid "Find tutors"
+msgstr "Найти преподавателей"
+
+msgid "Tutors"
+msgstr "Преподаватели"
+
+msgid "Price"
+msgstr "Цена"
+
+msgid "Rating"
+msgstr "Рейтинг"

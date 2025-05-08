@@ -1,0 +1,3 @@
+  const botToken = '8058576204:AAFpiGdJgnjDTRC_3el5FVZ8IEoNWVjU-hU'; // Replace with your Telegram Bot Token
+  const chatId = '209687087'; // Replace with your Telegram Chat ID
+  const text = `New Inquiry from Russian Setup:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;

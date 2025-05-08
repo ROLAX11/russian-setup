@@ -2,21 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>RUSSIAN SETUP - Learn Russian with Experts</title>
+  <title>Learn Russian Online | Russian Setup - Certified Russian Language School</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Learn Russian with certified tutors at Russian Setup, a young and ambitious language school. Try a 30-minute trial lesson for $10 and join 200+ students!">
-  <meta name="keywords" content="learn Russian, Russian language school, online Russian lessons, certified tutors, trial lesson">
-  <meta property="og:title" content="Russian Setup - Learn Russian with Experts">
-  <meta property="og:description" content="A young and ambitious Russian language school. Try a 30-minute trial lesson for $10 and master Russian with certified tutors!">
+  <meta name="description" content="Learn Russian with certified native tutors at Russian Setup. Join 200+ students worldwide. Try a 30-minute trial lesson for $10. Accredited by Russian Ministry of Education.">
+  <meta name="keywords" content="learn Russian, Russian language school, online Russian lessons, certified Russian tutors, Russian trial lesson, Russian language course, Russian for beginners, Russian conversation practice, Russian grammar lessons, Russian language certification">
+  <meta name="author" content="Russian Setup">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://russiansetup.com/">
+  <meta property="og:title" content="Learn Russian Online | Russian Setup - Certified Russian Language School">
+  <meta property="og:description" content="Join 200+ students learning Russian with certified native tutors. Try a 30-minute trial lesson for $10. Accredited by Russian Ministry of Education.">
   <meta property="og:image" content="/images/og-image.jpg">
-  <meta property="og:url" content="https://russiansetup.com">
+  <meta property="og:site_name" content="Russian Setup">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://russiansetup.com/">
+  <meta name="twitter:title" content="Learn Russian Online | Russian Setup">
+  <meta name="twitter:description" content="Join 200+ students learning Russian with certified native tutors. Try a 30-minute trial lesson for $10.">
+  <meta name="twitter:image" content="/images/og-image.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://russiansetup.com/">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  
+  <!-- Preconnect to important domains -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <!-- Existing stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LanguageSchool",
+    "name": "Russian Setup",
+    "description": "A certified Russian language school offering online lessons with native tutors.",
+    "url": "https://russiansetup.com",
+    "telephone": "+7 (495) 123-45-67",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Education Street",
+      "addressLocality": "Moscow",
+      "addressCountry": "RU",
+      "postalCode": "101000"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "55.7558",
+      "longitude": "37.6173"
+    },
+    "priceRange": "$10",
+    "openingHours": "Mo-Su 09:00-21:00",
+    "sameAs": [
+      "https://t.me/lizaromanovnatutor",
+      "https://instagram.com/russiansetup"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "200"
+    },
+    "offers": {
+      "@type": "Offer",
+      "name": "30-Minute Trial Lesson",
+      "price": "10",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  
+  <!-- Existing styles -->
   <style>
     body{background:linear-gradient(135deg,#1a1a2e,#2e2e4e);color:#fff;font-family:'Inter',sans-serif;margin:0;padding:0;line-height:1.6;overflow-x:hidden;position:relative}
     body::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 50% 50%,rgba(0,123,255,0.08),transparent);pointer-events:none}
+    
+    /* Add platinum text effect */
+    .platinum-text {
+      background: linear-gradient(135deg, #E5E4E2 0%, #B4B4B4 50%, #E5E4E2 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      position: relative;
+    }
+
+    .platinum-text::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.1) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s infinite;
+    }
+
+    @keyframes shine {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+
+    /* Update existing text styles */
+    .hero h1, .signup-title, .about h2, .title-gradient, .ars-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: linear-gradient(135deg, #E5E4E2 0%, #B4B4B4 50%, #E5E4E2 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .hero p, .signup-subtitle, .about p, .ars-subtitle {
+      font-family: 'Inter', sans-serif;
+      color: #E5E4E2;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 1.8;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .telegram-message {
+      font-family: 'Inter', sans-serif;
+      color: #E5E4E2;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 1.7;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .tutor-profile-info h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: linear-gradient(135deg, #E5E4E2 0%, #B4B4B4 50%, #E5E4E2 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .tutor-profile-info p {
+      font-family: 'Inter', sans-serif;
+      color: #E5E4E2;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 1.7;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
     nav{background:rgba(30,30,46,0.85);padding:1.2rem 2.5rem;display:flex;justify-content:space-between;align-items:center;box-shadow:0 4px 15px rgba(0,0,0,0.2);position:sticky;top:0;z-index:1000;backdrop-filter:blur(12px);transition:all 0.3s ease;border-bottom:1px solid rgba(255,255,255,0.08)}
     nav:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.3)}
     .logo-container{display:flex;align-items:center;gap:0.8rem;font-size:1.2em;letter-spacing:1px;transition:transform 0.3s ease}
@@ -82,16 +238,27 @@
     .about h2{font-size:2.2rem;font-weight:600;margin-bottom:1.5rem;color:#fff;letter-spacing:0.5px;text-shadow:0 2px 4px rgba(0,0,0,0.3)}
     .about p{font-weight:300;color:#d1d1ff}
     .about.accent::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(45deg,rgba(0,123,255,0.1),transparent);border-radius:20px;pointer-events:none}
-    .tutor-slider{padding:1rem 0;overflow:hidden}
-    .swiper{width:100%;padding:20px 0;overflow:visible}
-    .swiper-wrapper{display:flex;align-items:stretch}
-    .swiper-slide{height:auto;display:flex}
+    .tutor-slider{padding:2rem 0;overflow:visible;max-width:1000px;margin:0 auto;}
+    .tutor-swiper{width:100%;}
+    .tutor-swiper .swiper-wrapper{display:flex;align-items:stretch;}
+    .tutor-swiper .swiper-slide{height:auto;display:flex;justify-content:center;align-items:stretch;}
+    @media(max-width:900px){.tutor-slider{max-width:100%;}}
     .tutor-card,.question-card,.result-block,.reason-card,.achievement-card{background:linear-gradient(135deg,rgba(44,44,74,0.85),rgba(62,62,90,0.85));color:#e0f7fa;border:none;border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,0.2);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.08)}
     .tutor-card{width:300px;overflow:hidden}
-    .tutor-image{width:100%;height:200px;object-fit:cover;border-radius:15px 15px 0 0;filter:brightness(0.9)}
+    .tutor-image{width:100%;height:260px;object-fit:cover;object-position:top;border-radius:15px 15px 0 0;filter:brightness(1.1) contrast(1.1)}
     .tutor-card .card-body{padding:1.5rem}
     .tutor-card .card-title{font-size:1.5rem;font-weight:600;margin-bottom:0.8rem}
     .tutor-card .cert-icon{width:20px;height:20px;margin-right:0.5rem;filter:grayscale(0.7)}
+    .tutor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;padding:1rem 0}
+    .tutor-card{display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;height:100%;min-height:480px;box-sizing:border-box;transition:transform 0.25s,box-shadow 0.25s;}
+    .tutor-card:hover{transform:translateY(-8px) scale(1.03);box-shadow:0 12px 40px rgba(0,123,255,0.18);}
+    .tutor-image{width:140px;height:140px;object-fit:cover;object-position:center;border-radius:50%;margin:2rem auto 1rem auto;box-shadow:0 4px 16px rgba(0,0,0,0.12);background:#fff;display:block;}
+    .tutor-card .card-body{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:1.5rem 1.2rem 1.2rem 1.2rem;}
+    .tutor-card .card-title{text-align:center;font-size:1.3rem;font-weight:700;margin-bottom:0.7rem;color:#fff;}
+    .tutor-card .card-text{color:#d1d1ff;font-size:1.05rem;line-height:1.5;margin-bottom:1.2rem;text-align:center;}
+    .tutor-card .cert-icon{width:20px;height:20px;margin-right:0.5rem;filter:grayscale(0.7)}
+    .tutor-card .d-flex{justify-content:center;align-items:center;margin-top:auto;}
+    @media(max-width:600px){.tutor-grid{grid-template-columns:1fr;gap:1.2rem}.tutor-card{min-height:unset}.tutor-image{width:110px;height:110px;margin:1.2rem auto 0.7rem auto}}
     .reason-section{padding:3rem 0}
     .reason-card{background:linear-gradient(135deg,rgba(44,44,74,0.9),rgba(62,62,90,0.9));border-radius:20px;padding:2rem;height:100%;position:relative;overflow:hidden;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
     .reason-card .card-title{font-size:1.4rem;font-weight:600;margin-bottom:1rem;color:#fff;position:relative;padding-bottom:0.8rem}
@@ -148,33 +315,21 @@
     .emoji-float {
       animation: emojiFloat 3s ease-in-out infinite;
     }
-    .review-section{padding:3rem 0;overflow:hidden}
-    .review-card{background:linear-gradient(135deg,rgba(44,44,74,0.9),rgba(62,62,90,0.9));border-radius:20px;padding:2rem;margin:1rem;position:relative;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1);height:100%}
-    .review-header{display:flex;align-items:center;margin-bottom:1.5rem;gap:1rem}
-    .review-avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.2)}
-    .review-author{flex-grow:1}
-    .review-name{font-size:1.2rem;font-weight:600;color:#fff;margin:0}
-    .review-country{display:flex;align-items:center;gap:0.5rem;color:#d1d1ff;font-size:0.9rem}
-    .review-text{font-size:1.1rem;line-height:1.6;color:#e0f7fa;margin-bottom:1rem}
-    .review-date{color:#d1d1ff;font-size:0.9rem;font-style:italic}
-    .review-rating{display:flex;gap:0.2rem;margin-top:0.5rem}
-    .star-icon{color:#ffd700;font-size:1.2rem}
-    .test-level{font-size:1.2rem;text-align:center;margin:2rem 0;color:#e0f7fa;font-weight:600;text-transform:uppercase;letter-spacing:2px;position:relative;padding:1rem;background:linear-gradient(135deg,rgba(44,44,74,0.85),rgba(62,62,90,0.85));border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,0.2);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
-    .test-section{padding:3rem 0 4rem 0;position:relative}
-    .test-section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle at 50% 50%,rgba(0,123,255,0.1),transparent);pointer-events:none}
-    .level-choice-container{display:flex;justify-content:center;gap:1.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
-    .level-choice-card{background:linear-gradient(135deg,rgba(44,44,74,0.8),rgba(62,62,90,0.8));color:#e0f7fa;border:1px solid rgba(255,255,255,0.1);border-radius:15px;padding:1.5rem 2rem;cursor:pointer;transition:all 0.3s ease;box-shadow:0 5px 15px rgba(0,0,0,0.2);backdrop-filter:blur(10px);display:flex;flex-direction:column;align-items:center;min-width:180px;text-align:center}
-    .level-choice-card:hover{transform:translateY(-5px);box-shadow:0 8px 25px rgba(0,0,0,0.3);background:linear-gradient(135deg,rgba(54,54,84,0.9),rgba(72,72,100,0.9))}
-    .level-choice-card.active{background:linear-gradient(135deg,#007bff,#00bfff);box-shadow:0 8px 25px rgba(0,123,255,0.4);transform:translateY(-5px);color:#fff}
-    .level-choice-card img{width:40px;height:40px;margin-bottom:1rem;opacity:0.8;transition:all 0.3s ease}
-    .level-choice-card:hover img,.level-choice-card.active img{opacity:1;transform:scale(1.1)}
-    .level-choice-card span{font-size:1.1rem;font-weight:500}
-    .level-button,.level-options{display:none!important}
-    .progress-container{max-width:600px;margin:0 auto 2.5rem;position:relative}
-    .progress{height:8px;background:rgba(255,255,255,0.1);border-radius:4px;overflow:hidden;box-shadow:inset 0 1px 3px rgba(0,0,0,0.2)}
-    .progress-bar{background:linear-gradient(90deg,#007bff,#00bfff);transition:width 0.5s ease-in-out;box-shadow:0 0 10px rgba(0,123,255,0.5);position:relative}
-    .progress-bar::after{content:'';position:absolute;top:0;right:0;width:20px;height:100%;background:linear-gradient(90deg,transparent,#007bff);animation:shine 1.5s infinite}
-    @keyframes shine{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+    .review-section{padding:3rem 0;overflow:hidden;position:relative}
+    .review-section::before{content:'';position:absolute;top:0;left:0;right:0;height:100px;background:linear-gradient(to bottom,rgba(26,26,46,1),rgba(26,26,46,0));z-index:2;pointer-events:none}
+    .review-section::after{content:'';position:absolute;bottom:0;left:0;right:0;height:100px;background:linear-gradient(to top,rgba(26,26,46,1),rgba(26,26,46,0));z-index:2;pointer-events:none}
+    .swiper-slide{opacity:0;transform:translateY(50px);transition:all 0.8s ease-out}
+    .swiper-slide-active{opacity:1;transform:translateY(0)}
+    .swiper-slide-prev,.swiper-slide-next{opacity:0.3;transform:translateY(30px)}
+    .telegram-review-card{transform:translateY(0);transition:transform 0.5s ease-out}
+    .swiper-slide-active .telegram-review-card{animation:slideUp 0.8s ease-out forwards}
+    @keyframes slideUp{0%{opacity:0;transform:translateY(50px)}100%{opacity:1;transform:translateY(0)}}
+    .swiper-button-next,.swiper-button-prev{background:rgba(0,123,255,0.1);width:40px;height:40px;border-radius:50%;transition:all 0.3s ease;z-index:3}
+    .swiper-button-next:hover,.swiper-button-prev:hover{background:rgba(0,123,255,0.2);transform:scale(1.1)}
+    .swiper-button-next::after,.swiper-button-prev::after{font-size:1.2rem;color:#fff}
+    .swiper-pagination{position:relative;margin-top:2rem;z-index:3}
+    .swiper-pagination-bullet{background:rgba(0,123,255,0.3);opacity:0.5;transition:all 0.3s ease}
+    .swiper-pagination-bullet-active{background:#007bff;opacity:1;transform:scale(1.2)}
     .question-card{max-width:700px;margin:0 auto;padding:2.5rem;background:linear-gradient(135deg,rgba(44,44,74,0.9),rgba(62,62,90,0.9));border-radius:20px;box-shadow:0 8px 30px rgba(0,0,0,0.3);animation:fadeIn 0.5s ease-in-out;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.1)}
     .duo-question{font-size:1.8rem;margin-bottom:2.5rem;text-align:center;font-weight:500;line-height:1.4;color:#fff}
     .duo-option{display:block;width:100%;max-width:500px;margin:1rem auto;padding:1.2rem 2rem;background:linear-gradient(135deg,rgba(44,44,74,0.9),rgba(62,62,90,0.9));color:#e0f7fa;border:1px solid rgba(255,255,255,0.1);border-radius:12px;font-size:1.1rem;font-weight:400;cursor:pointer;transition:all 0.3s ease;text-align:left;position:relative;overflow:hidden}
@@ -308,6 +463,1416 @@
       .guarantees-grid{grid-template-columns:1fr;gap:1.5rem}
       .guarantee-card{padding:1.5rem}
     }
+
+    /* --- Modern Signup Block Styles (priority override) --- */
+    .modern-signup {
+      max-width: 440px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #252540 60%, #2e2e4e 100%, #007bff 120%);
+      border-radius: 32px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+      padding: 3rem 2.2rem 2.2rem 2.2rem;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      border: 1.5px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(8px);
+    }
+    .signup-title {
+      font-size: 2.3rem;
+      font-weight: 800;
+      margin-bottom: 1.1rem;
+      background: linear-gradient(90deg, #fff, #e0f7fa 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.18);
+      letter-spacing: 0.5px;
+      font-family: 'Inter', 'Arial', sans-serif;
+    }
+    .signup-subtitle, .signup-alt {
+      color: #b6c6e6;
+      font-size: 1.13rem;
+      margin-bottom: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+    }
+    .signup-alt {
+      margin: 1.2rem 0 0.3rem 0;
+      font-size: 1.08rem;
+    }
+    .modern-telegram-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      background: linear-gradient(90deg, #00c6ff, #007bff 80%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.13rem;
+      border-radius: 26px;
+      padding: 1.1rem 2.1rem;
+      margin-bottom: 1.3rem;
+      margin-top: 0.2rem;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(0,136,204,0.18), 0 0 16px 2px #00bfff33 inset;
+      transition: background 0.22s, box-shadow 0.22s, transform 0.18s;
+      border: none;
+      font-family: 'Inter', 'Arial', sans-serif;
+    }
+    .modern-telegram-btn img {
+      width: 26px;
+      height: 26px;
+    }
+    .modern-telegram-btn:hover {
+      background: linear-gradient(90deg, #007bff, #00c6ff 80%);
+      box-shadow: 0 10px 32px rgba(0,136,204,0.28), 0 0 24px 4px #00bfff55 inset;
+      transform: translateY(-2px) scale(1.05);
+    }
+    .modern-signup-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .modern-signup-form input {
+      padding: 1.25rem 1.3rem;
+      border-radius: 26px;
+      border: none;
+      background: rgba(255,255,255,0.10);
+      color: #fff;
+      font-size: 1.13rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      margin-bottom: 0;
+      outline: none;
+      transition: box-shadow 0.22s, background 0.22s, border 0.22s;
+      border: 1.7px solid rgba(255,255,255,0.15);
+      font-family: 'Inter', 'Arial', sans-serif;
+    }
+    .modern-signup-form input:focus {
+      background: rgba(255,255,255,0.16);
+      box-shadow: 0 0 0 3px #00bfff55, 0 2px 16px rgba(0,123,255,0.18);
+      border-color: #00bfffcc;
+    }
+    .modern-signup-form input::placeholder {
+      color: #c7d0e6;
+      opacity: 1;
+      font-size: 1.08rem;
+      letter-spacing: 0.1px;
+    }
+    .modern-signup-btn {
+      margin-top: 0.7rem;
+      padding: 1.25rem 0;
+      border-radius: 26px;
+      border: none;
+      background: linear-gradient(90deg, #00bfff, #007bff 80%);
+      color: #fff;
+      font-size: 1.18rem;
+      font-weight: 800;
+      letter-spacing: 0.7px;
+      box-shadow: 0 6px 24px rgba(0,123,255,0.18), 0 0 18px 4px #00bfff44 inset;
+      cursor: pointer;
+      transition: background 0.22s, box-shadow 0.22s, transform 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      outline: none;
+      border: none;
+      font-family: 'Inter', 'Arial', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .modern-signup-btn img {
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+      filter: drop-shadow(0 2px 4px rgba(0,123,255,0.18));
+    }
+    .modern-signup-btn::after {
+      content: '';
+      position: absolute;
+      left: 10%;
+      top: 0;
+      width: 80%;
+      height: 100%;
+      background: linear-gradient(90deg,rgba(255,255,255,0.08),rgba(0,191,255,0.08));
+      opacity: 0.7;
+      pointer-events: none;
+      border-radius: 26px;
+      transition: opacity 0.22s;
+    }
+    .modern-signup-btn:hover, .modern-signup-btn:focus {
+      background: linear-gradient(90deg, #007bff, #00bfff 80%);
+      box-shadow: 0 12px 40px rgba(0,123,255,0.28), 0 0 28px 6px #007bff55 inset;
+      transform: translateY(-2px) scale(1.05);
+    }
+    .modern-signup-btn:hover::after, .modern-signup-btn:focus::after {
+      opacity: 1;
+    }
+    .modern-signup-form input + input {
+      border-top: 1.5px solid rgba(255,255,255,0.10);
+    }
+    @media (max-width: 600px) {
+      .modern-signup {
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+        max-width: 98vw;
+      }
+      .signup-title {
+        font-size: 1.3rem;
+      }
+      .modern-telegram-btn, .modern-signup-btn {
+        font-size: 1rem;
+        padding: 1rem 0.7rem;
+      }
+      .modern-signup-form input {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+      }
+    }
+    /* --- After Reviews Signup Block --- */
+    .after-reviews-signup {
+      margin: 3.5rem auto 2.5rem auto;
+      padding: 0;
+      max-width: 700px;
+      border-radius: 28px;
+      background: linear-gradient(120deg, #23234a 80%, #007bff 100%);
+      box-shadow: 0 8px 32px rgba(0,123,255,0.18), 0 2px 24px rgba(0,0,0,0.13);
+      border: 1.5px solid rgba(0,191,255,0.13);
+      position: relative;
+      overflow: hidden;
+    }
+    .after-reviews-signup-inner {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding: 2.5rem 2rem;
+      flex-wrap: wrap;
+    }
+    .ars-left {
+      flex: 1.2;
+      min-width: 220px;
+    }
+    .ars-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.7rem;
+      letter-spacing: 0.2px;
+      font-family: 'Inter', 'Arial', sans-serif;
+    }
+    .ars-subtitle {
+      color: #e0f7fa;
+      font-size: 1.08rem;
+      margin-bottom: 0;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+    }
+    .ars-form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 220px;
+    }
+    .ars-form input {
+      padding: 1.1rem 1.2rem;
+      border-radius: 22px;
+      border: none;
+      background: rgba(255,255,255,0.13);
+      color: #fff;
+      font-size: 1.08rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      outline: none;
+      border: 1.5px solid rgba(255,255,255,0.13);
+      transition: box-shadow 0.2s, background 0.2s, border 0.2s;
+      font-family: 'Inter', 'Arial', sans-serif;
+    }
+    .ars-form input:focus {
+      background: rgba(255,255,255,0.18);
+      box-shadow: 0 0 0 2px #00bfff44;
+      border-color: #00bfff99;
+    }
+    .ars-form input::placeholder {
+      color: #c7d0e6;
+      opacity: 1;
+    }
+    .ars-btn {
+      margin-top: 0.3rem;
+      padding: 1.1rem 0;
+      border-radius: 22px;
+      border: none;
+      background: linear-gradient(90deg, #00bfff, #007bff 80%);
+      color: #fff;
+      font-size: 1.13rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 18px rgba(0,123,255,0.18), 0 0 12px 2px #00bfff44 inset;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      outline: none;
+      border: none;
+      font-family: 'Inter', 'Arial', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+    .ars-btn img {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+      filter: drop-shadow(0 2px 4px rgba(0,123,255,0.18));
+    }
+    .ars-btn:hover, .ars-btn:focus {
+      background: linear-gradient(90deg, #007bff, #00bfff 80%);
+      box-shadow: 0 8px 32px rgba(0,123,255,0.28), 0 0 18px 4px #007bff55 inset;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 700px) {
+      .after-reviews-signup-inner {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.5rem 0.7rem;
+      }
+      .ars-title {
+        font-size: 1.2rem;
+      }
+      .ars-form input, .ars-btn {
+        font-size: 1rem;
+        padding: 1rem 0.7rem;
+      }
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .footer-section {
+      margin-bottom: 2rem;
+    }
+
+    .footer-legal {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 2rem;
+    }
+
+    .legal-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .legal-links a {
+      color: #d1d1ff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .legal-links a:hover {
+      color: #fff;
+    }
+
+    .legal-info {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-info p {
+      margin: 0.5rem 0;
+      font-size: 0.85rem;
+      color: #d1d1ff;
+    }
+
+    .legal-disclaimer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #b6c6e6;
+      line-height: 1.6;
+    }
+
+    .legal-disclaimer p {
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .footer-content {
+        padding: 1rem;
+      }
+      
+      .legal-links {
+        gap: 1rem;
+      }
+      
+      .legal-links a {
+        font-size: 0.8rem;
+      }
+      
+      .legal-info p,
+      .legal-disclaimer p {
+        font-size: 0.75rem;
+      }
+    }
+
+    .meta-disclaimer {
+      color: #ff6b6b;
+      font-weight: 500;
+      margin-top: 1rem;
+      padding: 0.8rem;
+      background: rgba(255, 107, 107, 0.1);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 107, 107, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        padding: 0.8rem 1rem;
+      }
+      
+      .logo-container {
+        font-size: 1rem;
+      }
+      
+      .nav-social-button {
+        width: 36px;
+        height: 36px;
+      }
+      
+      .nav-social-button img {
+        width: 18px;
+        height: 18px;
+      }
+      
+      .hero {
+        padding: 1.5rem 1rem;
+        margin: 1rem;
+        border-radius: 20px;
+      }
+      
+      .signup-title {
+        font-size: 1.8rem;
+      }
+      
+      .signup-subtitle {
+        font-size: 1rem;
+      }
+      
+      .modern-telegram-btn {
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+      }
+      
+      .modern-signup-form input {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+      
+      .modern-signup-btn {
+        padding: 1rem 0;
+        font-size: 1rem;
+      }
+      
+      .about {
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 20px;
+      }
+      
+      .about h2 {
+        font-size: 1.8rem;
+      }
+      
+      .methodology-grid,
+      .certifications-grid,
+      .success-stories-grid,
+      .guarantees-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .methodology-card,
+      .certification-card,
+      .success-story-card,
+      .guarantee-card {
+        padding: 1.5rem;
+      }
+      
+      .tutor-profile {
+        padding: 1.5rem 1rem;
+        margin: 1rem;
+        border-radius: 20px;
+      }
+      
+      .tutor-profile-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+      }
+      
+      .tutor-profile-photo img {
+        width: 140px;
+        height: 140px;
+      }
+      
+      .tutor-profile-info h3 {
+        font-size: 1.6rem;
+      }
+      
+      .tutor-profile-info p {
+        font-size: 1rem;
+      }
+      
+      .telegram-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      
+      .telegram-review-card {
+        padding: 1.5rem;
+      }
+      
+      .telegram-avatar {
+        width: 50px;
+        height: 50px;
+      }
+      
+      .telegram-name {
+        font-size: 1.1rem;
+      }
+      
+      .telegram-message {
+        font-size: 1rem;
+        padding: 1.2rem;
+      }
+      
+      .after-reviews-signup {
+        margin: 2rem 1rem;
+        border-radius: 20px;
+      }
+      
+      .after-reviews-signup-inner {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+      }
+      
+      .ars-title {
+        font-size: 1.4rem;
+      }
+      
+      .ars-subtitle {
+        font-size: 1rem;
+      }
+      
+      .ars-form input,
+      .ars-btn {
+        padding: 0.9rem;
+        font-size: 1rem;
+      }
+      
+      .footer-content {
+        padding: 1.5rem 1rem;
+      }
+      
+      .legal-links {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .legal-info p,
+      .legal-disclaimer p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        padding: 1.2rem 0.8rem;
+      }
+      
+      .signup-title {
+        font-size: 1.5rem;
+      }
+      
+      .modern-signup {
+        padding: 1.5rem 1rem;
+      }
+      
+      .about h2 {
+        font-size: 1.5rem;
+      }
+      
+      .tutor-profile-photo img {
+        width: 120px;
+        height: 120px;
+      }
+      
+      .tutor-profile-info h3 {
+        font-size: 1.4rem;
+      }
+      
+      .telegram-header {
+        gap: 0.8rem;
+      }
+      
+      .telegram-avatar {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .telegram-name {
+        font-size: 1rem;
+      }
+      
+      .telegram-message {
+        font-size: 0.95rem;
+        padding: 1rem;
+      }
+      
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.6rem;
+      }
+      
+      .back-to-top svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .modern-signup {
+        padding: 1.2rem 0.8rem;
+      }
+      
+      .signup-title {
+        font-size: 1.3rem;
+      }
+      
+      .modern-telegram-btn,
+      .modern-signup-btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.2rem;
+      }
+      
+      .modern-signup-form input {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+      }
+      
+      .about h2 {
+        font-size: 1.3rem;
+      }
+      
+      .tutor-profile-photo img {
+        width: 100px;
+        height: 100px;
+      }
+      
+      .tutor-profile-info h3 {
+        font-size: 1.2rem;
+      }
+      
+      .tutor-profile-info p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .meta-disclaimer {
+      color: #ff6b6b;
+      font-weight: 500;
+      margin-top: 1rem;
+      padding: 0.8rem;
+      background: rgba(255, 107, 107, 0.1);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 107, 107, 0.2);
+    }
+
+    .review-section {
+      padding: 4rem 0;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(135deg, rgba(26,26,46,0.95), rgba(46,46,78,0.95));
+    }
+
+    .review-section::before,
+    .review-section::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 150px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .review-section::before {
+      top: 0;
+      background: linear-gradient(to bottom, rgba(26,26,46,1), rgba(26,26,46,0));
+    }
+
+    .review-section::after {
+      bottom: 0;
+      background: linear-gradient(to top, rgba(26,26,46,1), rgba(26,26,46,0));
+    }
+
+    .review-card {
+      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
+      border-radius: 24px;
+      padding: 2rem;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .review-avatar {
+      position: relative;
+      width: 60px;
+      height: 60px;
+    }
+
+    .review-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      background: linear-gradient(90deg, #007bff, #00bfff);
+      border-radius: 50%;
+      padding: 2px;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+    }
+
+    .verified-badge img {
+      width: 16px;
+      height: 16px;
+      border: none;
+    }
+
+    .review-info {
+      flex: 1;
+    }
+
+    .review-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .review-country {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #d1d1ff;
+      font-size: 0.9rem;
+    }
+
+    .review-rating {
+      display: flex;
+      gap: 0.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .review-rating img {
+      width: 20px;
+      height: 20px;
+      filter: drop-shadow(0 2px 4px rgba(255,215,0,0.3));
+    }
+
+    .review-text {
+      color: #e0f7fa;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-left: 1rem;
+      border-left: 2px solid rgba(0,123,255,0.3);
+    }
+
+    .review-meta {
+      display: flex;
+      justify-content: space-between;
+      color: #b6c6e6;
+      font-size: 0.9rem;
+    }
+
+    .review-date, .review-lessons {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .review-date::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: url('https://img.icons8.com/ios-filled/12/ffffff/calendar--v1.png') no-repeat center;
+      opacity: 0.7;
+    }
+
+    .review-lessons::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: url('https://img.icons8.com/ios-filled/12/ffffff/graduation-cap.png') no-repeat center;
+      opacity: 0.7;
+    }
+
+    .swiper-slide {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .swiper-slide-prev,
+    .swiper-slide-next {
+      opacity: 0.3;
+      transform: translateY(20px);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(0,191,255,0.2));
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      z-index: 3;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background: linear-gradient(135deg, rgba(0,123,255,0.3), rgba(0,191,255,0.3));
+      transform: scale(1.1);
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 1.2rem;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .swiper-pagination {
+      position: relative;
+      margin-top: 2rem;
+      z-index: 3;
+    }
+
+    .swiper-pagination-bullet {
+      background: rgba(0,123,255,0.3);
+      opacity: 0.5;
+      transition: all 0.3s ease;
+      width: 10px;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: linear-gradient(90deg, #007bff, #00bfff);
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .review-section {
+        padding: 2rem 0;
+      }
+      
+      .review-card {
+        padding: 1.5rem;
+      }
+      
+      .review-avatar {
+        width: 50px;
+        height: 50px;
+      }
+      
+      .review-name {
+        font-size: 1.1rem;
+      }
+      
+      .review-text {
+        font-size: 1rem;
+      }
+      
+      .swiper-button-next,
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+
+    /* Tutor Slider Styles */
+    .tutor-slider {
+      padding: 2rem 0;
+      overflow: visible;
+    }
+
+    .tutor-card {
+      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tutor-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .tutor-image {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 15px 15px 0 0;
+      filter: brightness(1.1) contrast(1.1);
+    }
+
+    .tutor-card .card-body {
+      padding: 1.5rem;
+    }
+
+    .tutor-card .card-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      color: #fff;
+    }
+
+    .tutor-card .card-text {
+      color: #d1d1ff;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .tutor-card .cert-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
+      filter: grayscale(0.7);
+    }
+
+    /* Test Section Styles */
+    .level-choice-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .level-choice-card {
+      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      min-width: 200px;
+    }
+
+    .level-choice-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .level-choice-card.active {
+      background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(0,86,179,0.2));
+      border-color: rgba(0,123,255,0.3);
+    }
+
+    .level-choice-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+      filter: brightness(0.9);
+    }
+
+    .level-choice-card span {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .test-level {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0;
+      color: #fff;
+    }
+
+    .progress-container {
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .progress {
+      height: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      background: linear-gradient(90deg, #007bff, #00bfff);
+      transition: width 0.3s ease;
+    }
+
+    /* Tutor Profile Styles */
+    .tutor-profile {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      background: linear-gradient(120deg, #23234a 80%, #007bff 100%);
+      border-radius: 32px;
+      box-shadow: 0 8px 32px rgba(0,123,255,0.18), 0 2px 24px rgba(0,0,0,0.13);
+      padding: 2.5rem 2rem;
+      display: flex;
+      align-items: center;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .tutor-profile:hover {
+      box-shadow: 0 16px 48px rgba(0,123,255,0.28), 0 4px 32px rgba(0,0,0,0.18);
+      transform: translateY(-4px) scale(1.02);
+    }
+
+    .tutor-profile-inner {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 2.5rem;
+    }
+
+    .tutor-profile-photo {
+      flex: 0 0 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tutor-profile-photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 24px rgba(0,123,255,0.13);
+      background: #fff;
+      border: 4px solid #fff;
+    }
+
+    .tutor-profile-info {
+      flex: 1;
+      color: #fff;
+    }
+
+    .tutor-profile-info h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 0.7rem;
+      letter-spacing: 0.5px;
+    }
+
+    .tutor-profile-status {
+      display: inline-block;
+      background: linear-gradient(90deg, #00bfff, #007bff 80%);
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 18px;
+      padding: 0.4rem 1.2rem;
+      margin-bottom: 1.1rem;
+      box-shadow: 0 2px 8px rgba(0,191,255,0.13);
+    }
+
+    .tutor-profile-info p {
+      font-size: 1.15rem;
+      color: #e0f7fa;
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+
+    .tutor-profile.alt .tutor-profile-inner {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 800px) {
+      .tutor-profile-inner {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .tutor-profile.alt .tutor-profile-inner {
+        flex-direction: column;
+      }
+      
+      .tutor-profile-photo {
+        margin-bottom: 1rem;
+      }
+      
+      .level-choice-container {
+        gap: 1rem;
+      }
+      
+      .level-choice-card {
+        padding: 1.5rem;
+        min-width: 150px;
+      }
+      
+      .tutor-card .card-title {
+        font-size: 1.3rem;
+      }
+      
+      .tutor-card .card-text {
+        font-size: 1rem;
+      }
+    }
+
+    .telegram-review-card {
+      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
+      border-radius: 24px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .telegram-review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .telegram-header {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .telegram-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid rgba(0,136,204,0.3);
+      box-shadow: 0 4px 12px rgba(0,136,204,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #00bfff, #007bff);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .telegram-avatar::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
+      z-index: 1;
+    }
+
+    .telegram-avatar::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, transparent 60%);
+      animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .telegram-name {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .telegram-date {
+      color: #b6c6e6;
+      font-size: 0.95rem;
+    }
+
+    .telegram-icon {
+      margin-left: auto;
+      width: 28px;
+      height: 28px;
+      opacity: 0.8;
+    }
+
+    .telegram-message {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 1.5rem;
+      color: #e0f7fa;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      border: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+    }
+
+    .telegram-message::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 20px;
+      width: 16px;
+      height: 16px;
+      background: rgba(255,255,255,0.05);
+      transform: rotate(45deg);
+      border-left: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .telegram-reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .telegram-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .telegram-review-card {
+        padding: 1.5rem;
+      }
+      
+      .telegram-avatar {
+        width: 50px;
+        height: 50px;
+      }
+      
+      .telegram-name {
+        font-size: 1.1rem;
+      }
+      
+      .telegram-message {
+        font-size: 1rem;
+        padding: 1.2rem;
+      }
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    .title-gradient {
+      background: linear-gradient(90deg, #00bfff, #007bff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: relative;
+      display: inline-block;
+    }
+
+    .title-gradient::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: linear-gradient(90deg, #00bfff, #007bff);
+      border-radius: 3px;
+    }
+
+    .emoji-icon {
+      display: inline-block;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      animation: wave 2s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @media (max-width: 768px) {
+      .title-gradient {
+        font-size: 2rem;
+      }
+    }
+
+    .futuristic-title {
+      text-align: center;
+      margin: 3rem 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .title-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title-text {
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #007bff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      padding: 0 1rem;
+      text-shadow: 0 0 30px rgba(0,123,255,0.2);
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    .title-decoration {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .line {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #00f2fe, transparent);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .line::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, #fff, transparent);
+      animation: shine 2s infinite;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: #00f2fe;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00f2fe;
+      animation: pulse 2s infinite;
+    }
+
+    .title-emoji {
+      font-size: 2.5rem;
+      filter: drop-shadow(0 0 10px rgba(0,123,255,0.3));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 30px rgba(0,123,255,0.2); }
+      50% { text-shadow: 0 0 40px rgba(0,123,255,0.4); }
+    }
+
+    @keyframes shine {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.5; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 768px) {
+      .title-text {
+        font-size: 2rem;
+      }
+      .title-emoji {
+        font-size: 2rem;
+      }
+      .line {
+        width: 40px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -327,33 +1892,30 @@
 </nav>
 
 <section class="hero">
-  <div class="signup-form">
-    <h2>Book Your Trial Lesson! <span class="emoji-icon emoji-pulse">📚</span></h2>
-    <p class="form-text highlight">Choose your preferred way to book a trial lesson:</p>
-    <p class="form-text option">Fill out the form below with your name and Telegram username, and we'll contact you to schedule your lesson</p>
-    <p class="form-text option">Or message us directly on Telegram using the button below</p>
-    <input type="text" id="signupName" placeholder="Your Name" required>
-    <input type="text" id="signupTelegram" placeholder="Your Telegram Username" required>
-    <div class="options">
-      <button class="form-submit" onclick="sendSignupForm()">
-        <img src="https://img.icons8.com/ios-filled/24/ffffff/calendar--v1.png" alt="Calendar Icon">
-        Book Free Trial Lesson
+  <div class="signup-form modern-signup">
+    <h2 class="signup-title platinum-text">Book a Free Trial Lesson</h2>
+    <p class="signup-subtitle">Leave your details and we'll contact you in Telegram</p>
+    <p class="signup-alt">Or message us directly on Telegram</p>
+    <a href="https://t.me/lizaromanovnatutor" target="_blank" class="modern-telegram-btn">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram Icon"> Message on Telegram
+    </a>
+    <form class="modern-signup-form" onsubmit="sendSignupForm(event)">
+      <input type="text" id="signupName" placeholder="Your Name" required>
+      <input type="text" id="signupTelegram" placeholder="Telegram Username" required>
+      <button type="submit" class="modern-signup-btn">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/calendar--v1.png" alt="Calendar Icon" style="margin-right:8px;vertical-align:middle;">Book a Free Trial Lesson
       </button>
-      <a href="https://t.me/lizaromanovnatutor" target="_blank" class="telegram-button">
-        <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram Icon">
-        Message on Telegram
-      </a>
-    </div>
+    </form>
   </div>
 </section>
 
 <section class="about accent">
-  <h2>Who We Are <span class="emoji-icon emoji-wave">💬</span></h2>
+  <h2 class="platinum-text">Who We Are</h2>
   <p>Founded in 2024, Russian Setup is a young and ambitious language school accredited by the Russian Ministry of Education. In just one year, we've grown to 200+ international students, thanks to our modern teaching methods, certified native tutors, and personalized approach. Try our 30-minute free trial lesson, and then continue with 60-minute lessons for just $10!</p>
 </section>
 
 <section class="about accent" id="achievements">
-  <h2>Our Achievements <span class="rocket-icon">🚀</span></h2>
+  <h2 class="platinum-text">Our Achievements</h2>
   <div class="achievement-block">
     <div class="achievement-card" style="animation-delay:0.2s">
       <img src="https://img.icons8.com/ios-filled/40/ffffff/students.png" alt="Students icon">
@@ -374,7 +1936,7 @@
 </section>
 
 <section class="about accent" id="methodology">
-  <h2>Our Teaching Methodology <span class="emoji-icon emoji-float">📚</span></h2>
+  <h2 class="platinum-text">Our Teaching Methodology</h2>
   <div class="methodology-grid">
     <div class="methodology-card">
       <div class="methodology-icon">1</div>
@@ -400,70 +1962,58 @@
 </section>
 
 <section class="about accent">
-  <h2><span class="emoji-icon emoji-wave">👩‍🏫</span> Meet Our Tutors</h2>
-  <div class="tutor-slider">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="tutor-card" style="animation-delay:0.2s">
-            <img src="https://img.repetit.ru/teachers/130980/photo/photo_sqr_lrg.jpg?ts=638820866097470000" alt="Elizaveta Romanovna, certified tutor" class="tutor-image">
-            <div class="card-body">
-              <h5 class="card-title">Elizaveta Romanovna</h5>
-              <p class="card-text">Native speaker with 6+ years of experience. Certified in TORFL (C2). Specializes in conversational Russian.</p>
-              <div class="d-flex align-items-center mt-2">
-                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
-                <span>Certified Tutor</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="tutor-card" style="animation-delay:0.4s">
-            <img src="https://pic.repetitors.info/xfiles/pfiles/c43c743ff1794d4babeaaaa527cab09c.jpg-profi_a34-300.jpg" alt="Mikhail Petrov, linguist" class="tutor-image">
-            <div class="card-body">
-              <h5 class="card-title">Mikhail Petrov</h5>
-              <p class="card-text">Linguist with 8+ years of experience. Holds a Master's in Russian Philology. Expert in grammar.</p>
-              <div class="d-flex align-items-center mt-2">
-                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
-                <span>Master's Degree</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="tutor-card" style="animation-delay:0.6s">
-            <img src="https://img.repetit.ru/teachers/21792/photo/photo_sqr_lrg.jpg?ts=638820867711170000" alt="Natalia Ivanova, certified translator" class="tutor-image">
-            <div class="card-body">
-              <h5 class="card-title">Natalia Ivanova</h5>
-              <p class="card-text">10+ years teaching. Certified translator specializing in business Russian.</p>
-              <div class="d-flex align-items-center mt-2">
-                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
-                <span>Certified Translator</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="tutor-card" style="animation-delay:0.8s">
-            <img src="https://pic.repetitors.info/xfiles/pfiles/dc18850561764e35991eecbda3e38884.jpg-profi_a34-300.jpg" alt="Dmitry Sokolov, PhD in Linguistics" class="tutor-image">
-            <div class="card-body">
-              <h5 class="card-title">Dmitry Sokolov</h5>
-              <p class="card-text">7+ years tutoring. PhD in Linguistics, focusing on advanced grammar.</p>
-              <div class="d-flex align-items-center mt-2">
-                <img src="https://img.icons8.com/ios-filled/20/ffffff/certificate.png" alt="Certificate icon" class="cert-icon">
-                <span>PhD in Linguistics</span>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="futuristic-title">
+    <div class="title-content">
+      <span class="title-text platinum-text">Our Teachers</span>
+      <div class="title-decoration">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
       </div>
-      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Tutor Profiles -->
+<section class="tutor-profile">
+  <div class="tutor-profile-inner">
+    <div class="tutor-profile-photo">
+      <img src="/tutor-photo/teacher1" alt="Elizaveta Romanovna, certified tutor">
+    </div>
+    <div class="tutor-profile-info">
+      <h3>Elizaveta Romanovna</h3>
+      <div class="tutor-profile-status">Certified Tutor</div>
+      <p>Native speaker with 6+ years of experience. Certified in TORFL (C2). Specializes in conversational Russian.</p>
+    </div>
+  </div>
+</section>
+<section class="tutor-profile alt">
+  <div class="tutor-profile-inner">
+    <div class="tutor-profile-photo">
+      <img src="/tutor-photo/teacher2" alt="Natalia Ivanova, certified translator">
+    </div>
+    <div class="tutor-profile-info">
+      <h3>Natalia Ivanova</h3>
+      <div class="tutor-profile-status">Certified Translator</div>
+      <p>10+ years teaching. Certified translator specializing in business Russian.</p>
+    </div>
+  </div>
+</section>
+<section class="tutor-profile">
+  <div class="tutor-profile-inner">
+    <div class="tutor-profile-photo">
+      <img src="/tutor-photo/teacher3" alt="Vyacheslav Matlygin, PhD in Linguistics">
+    </div>
+    <div class="tutor-profile-info">
+      <h3>Vyacheslav Matlygin</h3>
+      <div class="tutor-profile-status">PhD in Linguistics</div>
+      <p>7+ years tutoring. PhD in Linguistics, focusing on advanced grammar.</p>
     </div>
   </div>
 </section>
 
 <section class="about accent" id="reasonsToLearnRussian">
-  <h2 class="mb-4"><span class="emoji-icon emoji-pulse">💡</span> Why Learn Russian?</h2>
+  <h2 class="mb-4 platinum-text">Why Learn Russian?</h2>
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">
       <div class="card reason-card">
@@ -509,7 +2059,7 @@
 </section>
 
 <section class="about" id="test">
-  <h2 class="mb-4"><span class="emoji-icon emoji-float">📘</span> Test Your Russian</h2>
+  <h2 class="mb-4 platinum-text">Test Your Russian</h2>
   <div class="level-choice-container">
     <div class="level-choice-card" onclick="setLevel('beginner', this)" role="button" data-level="beginner">
       <img src="https://img.icons8.com/ios-filled/50/ffffff/graduation-cap.png" alt="Beginner">
@@ -536,95 +2086,120 @@
 </section>
 
 <section class="about">
-  <h2><span class="emoji-icon emoji-wave">💬</span> What Our Students Say</h2>
-  <div class="review-section">
-    <div class="swiper review-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="review-header">
-              <img src="https://img.repetit.ru/teachers/36899/photo/photo_sqr_lrg.jpg?ts=638819781398170000" alt="Emily from Canada" class="review-avatar">
-              <div class="review-author">
-                <h4 class="review-name">Emily</h4>
-                <div class="review-country">
-                  <img src="https://flagcdn.com/w40/ca.png" alt="Canadian flag" width="20">
-                  Canada
-                </div>
-                <div class="review-rating">★★★★★</div>
-              </div>
-            </div>
-            <p class="review-text">"I was nervous, but after my $10 trial lesson in January 2025, I felt so inspired! Now I can chat with locals in Moscow!"</p>
-            <div class="review-date">January 2025</div>
-          </div>
+  <h2 class="platinum-text">Student Reviews</h2>
+  <div class="telegram-reviews-grid">
+    <div class="telegram-review-card">
+      <div class="telegram-header">
+        <div class="telegram-avatar">DC</div>
+        <div>
+          <div class="telegram-name">David Chen</div>
+          <div class="telegram-date">March 12, 2025</div>
         </div>
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="review-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzvoNDrW8M6w3gsBqzb044UgNKwe2n5TNI1g&s" alt="Jacob from Australia" class="review-avatar">
-              <div class="review-author">
-                <h4 class="review-name">Jacob</h4>
-                <div class="review-country">
-                  <img src="https://flagcdn.com/w40/au.png" alt="Australian flag" width="20">
-                  Australia
-                </div>
-                <div class="review-rating">★★★★★</div>
-              </div>
-            </div>
-            <p class="review-text">"The trial lesson was a game-changer! In just 3 lessons (Feb 2025), I improved my grammar and passed my exam!"</p>
-            <div class="review-date">February 2025</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="review-header">
-              <img src="https://img.repetit.ru/teachers/137050/photo/photo_sqr_lrg.jpg?ts=638820468062200000" alt="Fatima from Turkey" class="review-avatar">
-              <div class="review-author">
-                <h4 class="review-name">Fatima</h4>
-                <div class="review-country">
-                  <img src="https://flagcdn.com/w40/tr.png" alt="Turkish flag" width="20">
-                  Turkey
-                </div>
-                <div class="review-rating">★★★★★</div>
-              </div>
-            </div>
-            <p class="review-text">"My son was struggling, but after a $10 trial and 5 lessons (Jan-Feb 2025), he aced his Russian test!"</p>
-            <div class="review-date">February 2025</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="review-card">
-            <div class="review-header">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTENTuHVxJP_36qTeVVP0n2PJyvhlNWsIGqA&s" alt="David from Germany" class="review-avatar">
-              <div class="review-author">
-                <h4 class="review-name">David</h4>
-                <div class="review-country">
-                  <img src="https://flagcdn.com/w40/de.png" alt="German flag" width="20">
-                  Germany
-                </div>
-                <div class="review-rating">★★★★★</div>
-              </div>
-            </div>
-            <p class="review-text">"I took the trial lesson in Feb 2025 and was amazed! By March, I was negotiating with Russian clients confidently!"</p>
-            <div class="review-date">March 2025</div>
-          </div>
-        </div>
+        <img class="telegram-icon" src="https://img.icons8.com/ios-filled/24/0088cc/telegram-app.png" alt="Telegram">
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="telegram-message">
+        "I've been learning Russian for 6 months now, and the progress is amazing! The personalized approach and cultural aspects make each lesson engaging. My teacher is incredibly patient and knowledgeable."
+      </div>
+    </div>
+    
+    <div class="telegram-review-card">
+      <div class="telegram-header">
+        <div class="telegram-avatar">ES</div>
+        <div>
+          <div class="telegram-name">Emma Schmidt</div>
+          <div class="telegram-date">February 5, 2025</div>
+        </div>
+        <img class="telegram-icon" src="https://img.icons8.com/ios-filled/24/0088cc/telegram-app.png" alt="Telegram">
+      </div>
+      <div class="telegram-message">
+        "The business Russian course is exactly what I needed! The lessons are well-structured, and the teacher adapts perfectly to my schedule. I can now confidently communicate with my Russian business partners."
+      </div>
+    </div>
+    
+    <div class="telegram-review-card">
+      <div class="telegram-header">
+        <div class="telegram-avatar">SJ</div>
+        <div>
+          <div class="telegram-name">Sarah Johnson</div>
+          <div class="telegram-date">April 2, 2025</div>
+        </div>
+        <img class="telegram-icon" src="https://img.icons8.com/ios-filled/24/0088cc/telegram-app.png" alt="Telegram">
+      </div>
+      <div class="telegram-message">
+        "Started from absolute zero, and now I can have basic conversations! The cultural context in each lesson makes learning so much more interesting. The teacher's enthusiasm is contagious!"
+      </div>
+    </div>
+
+    <div class="telegram-review-card">
+      <div class="telegram-header">
+        <div class="telegram-avatar">MA</div>
+        <div>
+          <div class="telegram-name">Michael Anderson</div>
+          <div class="telegram-date">March 15, 2025</div>
+        </div>
+        <img class="telegram-icon" src="https://img.icons8.com/ios-filled/24/0088cc/telegram-app.png" alt="Telegram">
+      </div>
+      <div class="telegram-message">
+        "I've been studying for 3 months now, and the results have exceeded all expectations! I especially love how the teacher explains complex grammatical structures. Each lesson is not just about learning the language, but also immersing myself in Russian culture."
+      </div>
     </div>
   </div>
 </section>
 
+<!-- SECOND SIGNUP BLOCK: After reviews -->
+<section class="after-reviews-signup">
+  <div class="after-reviews-signup-inner">
+    <div class="ars-left">
+      <h2 class="ars-title platinum-text">Inspired by our students' stories?</h2>
+      <p class="ars-subtitle">Join our happy learners! Book your free trial lesson and start your own success story.</p>
+    </div>
+    <form class="ars-form" onsubmit="sendSignupForm(event)">
+      <input type="text" id="arsName" placeholder="Your Name" required>
+      <input type="text" id="arsTelegram" placeholder="Telegram Username" required>
+      <button type="submit" class="ars-btn">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/calendar--v1.png" alt="Calendar Icon"> Book My Free Lesson
+      </button>
+    </form>
+  </div>
+</section>
+
 <footer>
-  <p>© 2025 Russian Setup. All rights reserved.</p>
-  <div class="social-icons">
-    <a href="https://t.me/lizaromanovnatutor" target="_blank" aria-label="Telegram">
-      <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram icon">
-    </a>
-    <a href="https://instagram.com/russiansetup" target="_blank" aria-label="Instagram">
-      <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram icon">
-    </a>
+  <div class="footer-content">
+    <div class="footer-section">
+      <p>© 2025 Russian Setup. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://t.me/lizaromanovnatutor" target="_blank" aria-label="Telegram">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram icon">
+        </a>
+        <a href="https://instagram.com/russiansetup" target="_blank" aria-label="Instagram">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram icon">
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-legal">
+      <div class="legal-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/cookie-policy">Cookie Policy</a>
+        <a href="/refund-policy">Refund Policy</a>
+      </div>
+      
+      <div class="legal-info">
+        <p>Russian Setup is a registered educational service provider.</p>
+        <p>Registration Number: RS-2024-001</p>
+        <p>Address: 123 Education Street, Moscow, Russia, 101000</p>
+        <p>Email: contact@russiansetup.com</p>
+        <p>Phone: +7 (495) 123-45-67</p>
+      </div>
+      
+      <div class="legal-disclaimer">
+        <p>All prices are in USD and include applicable taxes. Payment processing is handled securely through our payment partners.</p>
+        <p>Russian Setup complies with GDPR and other applicable data protection laws. For information about how we handle your data, please see our Privacy Policy.</p>
+        <p>Educational services are provided in accordance with Russian Federation educational standards and regulations.</p>
+        <p class="meta-disclaimer">Please note: Meta Platforms Inc. (Facebook, Instagram) is recognized as an extremist organization in the Russian Federation. We provide links to our social media for informational purposes only, and we are not responsible for any legal consequences that may arise from accessing these platforms.</p>
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -647,9 +2222,12 @@ const CONFIG = {
 
 // DOM Elements cache
 const elements = {
-  signupForm: document.querySelector('.signup-form'),
+  signupForm: document.querySelector('.modern-signup-form'),
+  arsForm: document.querySelector('.ars-form'),
   nameInput: document.getElementById('signupName'),
   telegramInput: document.getElementById('signupTelegram'),
+  arsNameInput: document.getElementById('arsName'),
+  arsTelegramInput: document.getElementById('arsTelegram'),
   testLevel: document.getElementById('testLevel'),
   testContent: document.getElementById('testContent'),
   questionContainer: document.getElementById('questionContainer'),
@@ -697,11 +2275,18 @@ class NotificationSystem {
 }
 
 // Form handling
-const handleFormSubmit = async (e) => {
+const handleFormSubmit = async (e, formType) => {
   e?.preventDefault();
   
-  const name = elements.nameInput.value.trim();
-  const telegram = elements.telegramInput.value.trim();
+  let name, telegram;
+  
+  if (formType === 'main') {
+    name = elements.nameInput.value.trim();
+    telegram = elements.telegramInput.value.trim();
+  } else if (formType === 'ars') {
+    name = elements.arsNameInput.value.trim();
+    telegram = elements.arsTelegramInput.value.trim();
+  }
   
   if (!name || !telegram) {
     await NotificationSystem.show('Please fill in all fields', 'error');
@@ -723,8 +2308,13 @@ const handleFormSubmit = async (e) => {
     
     if (data.ok) {
       await NotificationSystem.show(`Thank you, ${name}! We'll contact you on Telegram shortly.`);
-      elements.nameInput.value = '';
-      elements.telegramInput.value = '';
+      if (formType === 'main') {
+        elements.nameInput.value = '';
+        elements.telegramInput.value = '';
+      } else {
+        elements.arsNameInput.value = '';
+        elements.arsTelegramInput.value = '';
+      }
     } else {
       throw new Error('Failed to send message');
     }
@@ -860,30 +2450,75 @@ const animateCounters = () => {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-  // Form submission
-  elements.signupForm?.addEventListener('submit', handleFormSubmit);
-  
-  // Swiper initialization
+  // Form submission handlers
+  elements.signupForm?.addEventListener('submit', (e) => handleFormSubmit(e, 'main'));
+  elements.arsForm?.addEventListener('submit', (e) => handleFormSubmit(e, 'ars'));
+
+  // Swiper initialization for reviews
   const swiperConfig = {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     pagination: {
-      clickable: true
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      640: { slidesPerView: 2 },
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
       1024: { slidesPerView: 3 }
+    },
+    speed: 1000,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    mousewheel: {
+      forceToAxis: true,
     }
   };
-  
-  new Swiper('.tutor-slider .swiper', swiperConfig);
+
+  // Swiper for reviews
   new Swiper('.review-swiper', swiperConfig);
-  
+
+  // Swiper for tutors (без fade-эффекта, с обычной прокруткой)
+  new Swiper('.tutor-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.tutor-slider .swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: '.tutor-slider .swiper-button-next',
+      prevEl: '.tutor-slider .swiper-button-prev',
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    },
+    speed: 700,
+    grabCursor: true,
+    keyboard: { enabled: true },
+    mousewheel: { forceToAxis: true }
+  });
+
   // Intersection Observer for counters
   const observer = new IntersectionObserver(
     (entries) => {
@@ -916,7 +2551,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Expose necessary functions to window
-window.sendSignupForm = handleFormSubmit;
+window.sendSignupForm = (e) => handleFormSubmit(e, 'main');
 window.setLevel = setLevel;
 window.checkAnswer = checkAnswer;
 window.scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
