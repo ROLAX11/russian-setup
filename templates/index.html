@@ -35,7 +35,6 @@
   
   <!-- Preconnect to important domains -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://unpkg.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   
   <!-- Existing stylesheets -->
@@ -67,8 +66,7 @@
     "priceRange": "$10",
     "openingHours": "Mo-Su 09:00-21:00",
     "sameAs": [
-      "https://t.me/lizaromanovnatutor",
-      "https://instagram.com/russiansetup"
+      "https://t.me/lizaromanovnatutor"
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -1873,1103 +1871,70 @@
       }
     }
 
-    /* Mobile Responsive Styles */
-    @media (max-width: 768px) {
-      nav {
-        padding: 0.8rem 1rem;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo-container {
-        font-size: 1rem;
-      }
-
-      .nav-buttons {
-        gap: 0.5rem;
-      }
-
-      .nav-social-button {
-        width: 36px;
-        height: 36px;
-      }
-
-      .nav-social-button img {
-        width: 18px;
-        height: 18px;
-      }
-
-      .hero {
-        padding: 1.5rem 1rem;
-        margin: 1rem;
-        border-radius: 20px;
-      }
-
-      .modern-signup {
-        padding: 1.5rem 1rem;
-        margin: 0;
-        border-radius: 20px;
-      }
-
-      .signup-title {
-        font-size: 1.8rem;
-        margin-bottom: 0.8rem;
-      }
-
-      .signup-subtitle {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-      }
-
-      .modern-telegram-btn {
-        padding: 0.9rem 1.5rem;
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      .modern-signup-form input {
-        padding: 1rem;
-        font-size: 1rem;
-      }
-
-      .modern-signup-btn {
-        padding: 1rem 0;
-        font-size: 1rem;
-        width: 100%;
-      }
-
-      .about {
-        padding: 1.5rem 1rem;
-        margin: 1rem;
-        border-radius: 20px;
-      }
-
-      .about h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-      }
-
-      .about p {
-        font-size: 1rem;
-        line-height: 1.6;
-      }
-
-      .methodology-grid,
-      .certifications-grid,
-      .success-stories-grid,
-      .guarantees-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0.5rem;
-      }
-
-      .methodology-card,
-      .certification-card,
-      .success-story-card,
-      .guarantee-card {
-        padding: 1.5rem;
-      }
-
-      .tutor-profile {
-        padding: 1.5rem 1rem;
-        margin: 1rem;
-        border-radius: 20px;
-      }
-
-      .tutor-profile-inner {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-      }
-
-      .tutor-profile-photo img {
-        width: 140px;
-        height: 140px;
-      }
-
-      .tutor-profile-info h3 {
-        font-size: 1.6rem;
-      }
-
-      .tutor-profile-info p {
-        font-size: 1rem;
-      }
-
-      .telegram-reviews-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0.5rem;
-      }
-
-      .telegram-review-card {
-        padding: 1.5rem;
-      }
-
-      .telegram-avatar {
-        width: 50px;
-        height: 50px;
-      }
-
-      .telegram-name {
-        font-size: 1.1rem;
-      }
-
-      .telegram-message {
-        font-size: 1rem;
-        padding: 1.2rem;
-      }
-
-      .after-reviews-signup {
-        margin: 2rem 1rem;
-        border-radius: 20px;
-      }
-
-      .after-reviews-signup-inner {
-        padding: 1.5rem 1rem;
-        gap: 1.5rem;
-      }
-
-      .ars-title {
-        font-size: 1.4rem;
-      }
-
-      .ars-subtitle {
-        font-size: 1rem;
-      }
-
-      .ars-form input,
-      .ars-btn {
-        padding: 0.9rem;
-        font-size: 1rem;
-      }
-
-      .footer-content {
-        padding: 1.5rem 1rem;
-      }
-
-      .legal-links {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .legal-info p,
-      .legal-disclaimer p {
-        font-size: 0.8rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero {
-        padding: 1.2rem 0.8rem;
-        margin: 0.8rem;
-      }
-      
-      .signup-title {
-        font-size: 1.5rem;
-      }
-      
-      .modern-signup {
-        padding: 1.2rem 0.8rem;
-      }
-      
-      .about h2 {
-        font-size: 1.5rem;
-      }
-      
-      .tutor-profile-photo img {
-        width: 120px;
-        height: 120px;
-      }
-      
-      .tutor-profile-info h3 {
-        font-size: 1.4rem;
-      }
-      
-      .telegram-header {
-        gap: 0.8rem;
-      }
-      
-      .telegram-avatar {
-        width: 40px;
-        height: 40px;
-      }
-      
-      .telegram-name {
-        font-size: 1rem;
-      }
-      
-      .telegram-message {
-        font-size: 0.95rem;
-        padding: 1rem;
-      }
-      
-      .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        padding: 0.6rem;
-      }
-      
-      .back-to-top svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    @media (max-width: 360px) {
-      .modern-signup {
-        padding: 1rem 0.6rem;
-      }
-      
-      .signup-title {
-        font-size: 1.3rem;
-      }
-      
-      .modern-telegram-btn,
-      .modern-signup-btn {
-        font-size: 0.9rem;
-        padding: 0.8rem 1.2rem;
-      }
-      
-      .modern-signup-form input {
-        font-size: 0.9rem;
-        padding: 0.8rem;
-      }
-      
-      .about h2 {
-        font-size: 1.3rem;
-      }
-      
-      .tutor-profile-photo img {
-        width: 100px;
-        height: 100px;
-      }
-      
-      .tutor-profile-info h3 {
-        font-size: 1.2rem;
-      }
-      
-      .tutor-profile-info p {
-        font-size: 0.9rem;
-      }
-    }
-
-    .meta-disclaimer {
-      color: #ff6b6b;
-      font-weight: 500;
-      margin-top: 1rem;
-      padding: 0.8rem;
-      background: rgba(255, 107, 107, 0.1);
-      border-radius: 8px;
-      border: 1px solid rgba(255, 107, 107, 0.2);
-    }
-
-    .review-section {
-      padding: 4rem 0;
-      overflow: hidden;
-      position: relative;
-      background: linear-gradient(135deg, rgba(26,26,46,0.95), rgba(46,46,78,0.95));
-    }
-
-    .review-section::before,
-    .review-section::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 150px;
-      z-index: 2;
-      pointer-events: none;
-    }
-
-    .review-section::before {
-      top: 0;
-      background: linear-gradient(to bottom, rgba(26,26,46,1), rgba(26,26,46,0));
-    }
-
-    .review-section::after {
-      bottom: 0;
-      background: linear-gradient(to top, rgba(26,26,46,1), rgba(26,26,46,0));
-    }
-
-    .review-card {
-      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
-      border-radius: 24px;
-      padding: 2rem;
-      height: 100%;
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .review-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-
-    .review-header {
+    .logo-container {
       display: flex;
       align-items: center;
       gap: 1rem;
-      margin-bottom: 1.2rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
     }
 
-    .review-avatar {
+    .logo-container:hover {
+      transform: scale(1.05);
+    }
+
+    .logo-wrapper {
       position: relative;
       width: 60px;
       height: 60px;
     }
 
-    .review-avatar img {
+    .logo-icon {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid rgba(255,255,255,0.1);
-    }
-
-    .verified-badge {
-      position: absolute;
-      bottom: -2px;
-      right: -2px;
-      background: linear-gradient(90deg, #007bff, #00bfff);
-      border-radius: 50%;
-      padding: 2px;
-      box-shadow: 0 2px 8px rgba(0,123,255,0.3);
-    }
-
-    .verified-badge img {
-      width: 16px;
-      height: 16px;
-      border: none;
-    }
-
-    .review-info {
-      flex: 1;
-    }
-
-    .review-name {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #fff;
-      margin-bottom: 0.3rem;
-    }
-
-    .review-country {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: #d1d1ff;
-      font-size: 0.9rem;
-    }
-
-    .review-rating {
-      display: flex;
-      gap: 0.3rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .review-rating img {
-      width: 20px;
-      height: 20px;
-      filter: drop-shadow(0 2px 4px rgba(255,215,0,0.3));
-    }
-
-    .review-text {
-      color: #e0f7fa;
-      font-size: 1.05rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-left: 1rem;
-      border-left: 2px solid rgba(0,123,255,0.3);
-    }
-
-    .review-meta {
-      display: flex;
-      justify-content: space-between;
-      color: #b6c6e6;
-      font-size: 0.9rem;
-    }
-
-    .review-date, .review-lessons {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .review-date::before {
-      content: '';
-      width: 12px;
-      height: 12px;
-      background: url('https://img.icons8.com/ios-filled/12/ffffff/calendar--v1.png') no-repeat center;
-      opacity: 0.7;
-    }
-
-    .review-lessons::before {
-      content: '';
-      width: 12px;
-      height: 12px;
-      background: url('https://img.icons8.com/ios-filled/12/ffffff/graduation-cap.png') no-repeat center;
-      opacity: 0.7;
-    }
-
-    .swiper-slide {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .swiper-slide-active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .swiper-slide-prev,
-    .swiper-slide-next {
-      opacity: 0.3;
-      transform: translateY(20px);
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(0,191,255,0.2));
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
+      filter: drop-shadow(0 4px 8px rgba(0,123,255,0.3));
       transition: all 0.3s ease;
-      z-index: 3;
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.1);
     }
 
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-      background: linear-gradient(135deg, rgba(0,123,255,0.3), rgba(0,191,255,0.3));
-      transform: scale(1.1);
+    .logo-container:hover .logo-icon {
+      filter: drop-shadow(0 6px 12px rgba(0,123,255,0.5));
+      transform: rotate(5deg);
     }
 
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-      font-size: 1.2rem;
-      color: #fff;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    }
-
-    .swiper-pagination {
-      position: relative;
-      margin-top: 2rem;
-      z-index: 3;
-    }
-
-    .swiper-pagination-bullet {
-      background: rgba(0,123,255,0.3);
-      opacity: 0.5;
-      transition: all 0.3s ease;
-      width: 10px;
-      height: 10px;
-    }
-
-    .swiper-pagination-bullet-active {
-      background: linear-gradient(90deg, #007bff, #00bfff);
-      opacity: 1;
-      transform: scale(1.2);
-    }
-
-    @media (max-width: 768px) {
-      .review-section {
-        padding: 2rem 0;
-      }
-      
-      .review-card {
-        padding: 1.5rem;
-      }
-      
-      .review-avatar {
-        width: 50px;
-        height: 50px;
-      }
-      
-      .review-name {
-        font-size: 1.1rem;
-      }
-      
-      .review-text {
-        font-size: 1rem;
-      }
-      
-      .swiper-button-next,
-      .swiper-button-prev {
-        display: none;
-      }
-    }
-
-    /* Tutor Slider Styles */
-    .tutor-slider {
-      padding: 2rem 0;
-      overflow: visible;
-    }
-
-    .tutor-card {
-      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .tutor-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-
-    .tutor-image {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 15px 15px 0 0;
-      filter: brightness(1.1) contrast(1.1);
-    }
-
-    .tutor-card .card-body {
-      padding: 1.5rem;
-    }
-
-    .tutor-card .card-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.8rem;
-      color: #fff;
-    }
-
-    .tutor-card .card-text {
-      color: #d1d1ff;
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    .tutor-card .cert-icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 0.5rem;
-      filter: grayscale(0.7);
-    }
-
-    /* Test Section Styles */
-    .level-choice-container {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 2rem 0;
-      flex-wrap: wrap;
-    }
-
-    .level-choice-card {
-      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
-      border-radius: 20px;
-      padding: 2rem;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.08);
-      min-width: 200px;
-    }
-
-    .level-choice-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-
-    .level-choice-card.active {
-      background: linear-gradient(135deg, rgba(0,123,255,0.2), rgba(0,86,179,0.2));
-      border-color: rgba(0,123,255,0.3);
-    }
-
-    .level-choice-card img {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 1rem;
-      filter: brightness(0.9);
-    }
-
-    .level-choice-card span {
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: #fff;
-    }
-
-    .test-level {
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin: 2rem 0;
-      color: #fff;
-    }
-
-    .progress-container {
-      max-width: 600px;
-      margin: 2rem auto;
-    }
-
-    .progress {
-      height: 8px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .progress-bar {
-      background: linear-gradient(90deg, #007bff, #00bfff);
-      transition: width 0.3s ease;
-    }
-
-    /* Tutor Profile Styles */
-    .tutor-profile {
-      max-width: 900px;
-      margin: 2.5rem auto;
-      background: linear-gradient(120deg, #23234a 80%, #007bff 100%);
-      border-radius: 32px;
-      box-shadow: 0 8px 32px rgba(0,123,255,0.18), 0 2px 24px rgba(0,0,0,0.13);
-      padding: 2.5rem 2rem;
-      display: flex;
-      align-items: center;
-      transition: box-shadow 0.3s, transform 0.3s;
-    }
-
-    .tutor-profile:hover {
-      box-shadow: 0 16px 48px rgba(0,123,255,0.28), 0 4px 32px rgba(0,0,0,0.18);
-      transform: translateY(-4px) scale(1.02);
-    }
-
-    .tutor-profile-inner {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      gap: 2.5rem;
-    }
-
-    .tutor-profile-photo {
-      flex: 0 0 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .tutor-profile-photo img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 4px 24px rgba(0,123,255,0.13);
-      background: #fff;
-      border: 4px solid #fff;
-    }
-
-    .tutor-profile-info {
-      flex: 1;
-      color: #fff;
-    }
-
-    .tutor-profile-info h3 {
-      font-size: 2rem;
-      font-weight: 800;
-      margin-bottom: 0.7rem;
-      letter-spacing: 0.5px;
-    }
-
-    .tutor-profile-status {
-      display: inline-block;
-      background: linear-gradient(90deg, #00bfff, #007bff 80%);
-      color: #fff;
-      font-weight: 700;
-      font-size: 1.1rem;
-      border-radius: 18px;
-      padding: 0.4rem 1.2rem;
-      margin-bottom: 1.1rem;
-      box-shadow: 0 2px 8px rgba(0,191,255,0.13);
-    }
-
-    .tutor-profile-info p {
-      font-size: 1.15rem;
-      color: #e0f7fa;
-      margin-bottom: 0;
-      line-height: 1.7;
-    }
-
-    .tutor-profile.alt .tutor-profile-inner {
-      flex-direction: row-reverse;
-    }
-
-    @media (max-width: 800px) {
-      .tutor-profile-inner {
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .tutor-profile.alt .tutor-profile-inner {
-        flex-direction: column;
-      }
-      
-      .tutor-profile-photo {
-        margin-bottom: 1rem;
-      }
-      
-      .level-choice-container {
-        gap: 1rem;
-      }
-      
-      .level-choice-card {
-        padding: 1.5rem;
-        min-width: 150px;
-      }
-      
-      .tutor-card .card-title {
-        font-size: 1.3rem;
-      }
-      
-      .tutor-card .card-text {
-        font-size: 1rem;
-      }
-    }
-
-    .telegram-review-card {
-      background: linear-gradient(135deg, rgba(44,44,74,0.85), rgba(62,62,90,0.85));
-      border-radius: 24px;
-      padding: 2rem;
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      max-width: 100%;
-      margin: 0;
-    }
-
-    .telegram-review-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-
-    .telegram-header {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .telegram-avatar {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      border: 2px solid rgba(0,136,204,0.3);
-      box-shadow: 0 4px 12px rgba(0,136,204,0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #fff;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-      background: linear-gradient(135deg, #00bfff, #007bff);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .telegram-avatar::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(45deg, rgba(255,255,255,0.1), transparent);
-      z-index: 1;
-    }
-
-    .telegram-avatar::after {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, transparent 60%);
-      animation: rotate 10s linear infinite;
-    }
-
-    @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-
-    .telegram-name {
-      font-weight: 700;
-      color: #fff;
-      font-size: 1.3rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .telegram-date {
-      color: #b6c6e6;
-      font-size: 0.95rem;
-    }
-
-    .telegram-icon {
-      margin-left: auto;
-      width: 28px;
-      height: 28px;
-      opacity: 0.8;
-    }
-
-    .telegram-message {
-      background: rgba(255,255,255,0.05);
-      border-radius: 16px;
-      padding: 1.5rem;
-      color: #e0f7fa;
-      font-size: 1.1rem;
-      line-height: 1.7;
-      border: 1px solid rgba(255,255,255,0.1);
-      position: relative;
-    }
-
-    .telegram-message::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      left: 20px;
-      width: 16px;
-      height: 16px;
-      background: rgba(255,255,255,0.05);
-      transform: rotate(45deg);
-      border-left: 1px solid rgba(255,255,255,0.1);
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .telegram-reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2rem;
-      margin: 2.5rem 0;
-    }
-
-    @media (max-width: 768px) {
-      .telegram-reviews-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-      
-      .telegram-review-card {
-        padding: 1.5rem;
-      }
-      
-      .telegram-avatar {
-        width: 50px;
-        height: 50px;
-      }
-      
-      .telegram-name {
-        font-size: 1.1rem;
-      }
-      
-      .telegram-message {
-        font-size: 1rem;
-        padding: 1.2rem;
-      }
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 2.5rem;
-      position: relative;
-      padding-bottom: 1rem;
-    }
-
-    .title-gradient {
-      background: linear-gradient(90deg, #00bfff, #007bff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: relative;
-      display: inline-block;
-    }
-
-    .title-gradient::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100px;
-      height: 3px;
-      background: linear-gradient(90deg, #00bfff, #007bff);
-      border-radius: 3px;
-    }
-
-    .emoji-icon {
-      display: inline-block;
-      margin-left: 0.5rem;
-      vertical-align: middle;
-      animation: wave 2s ease-in-out infinite;
-    }
-
-    @keyframes wave {
-      0% { transform: rotate(0deg); }
-      25% { transform: rotate(-10deg); }
-      75% { transform: rotate(10deg); }
-      100% { transform: rotate(0deg); }
-    }
-
-    @media (max-width: 768px) {
-      .title-gradient {
-        font-size: 2rem;
-      }
-    }
-
-    .futuristic-title {
-      text-align: center;
-      margin: 3rem 0;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    .title-content {
-      position: relative;
+    .logo-text {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      line-height: 1;
     }
 
-    .title-text {
-      font-size: 2.8rem;
+    .logo-title {
+      font-size: 1.4rem;
       font-weight: 800;
-      background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #007bff 100%);
+      background: linear-gradient(90deg, #00bfff, #007bff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 1px;
-      text-transform: uppercase;
-      position: relative;
-      padding: 0 1rem;
-      text-shadow: 0 0 30px rgba(0,123,255,0.2);
-      animation: glow 3s ease-in-out infinite;
     }
 
-    .title-decoration {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
-
-    .line {
-      width: 60px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #00f2fe, transparent);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .line::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, #fff, transparent);
-      animation: shine 2s infinite;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      background: #00f2fe;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #00f2fe;
-      animation: pulse 2s infinite;
-    }
-
-    .title-emoji {
-      font-size: 2.5rem;
-      filter: drop-shadow(0 0 10px rgba(0,123,255,0.3));
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes glow {
-      0%, 100% { text-shadow: 0 0 30px rgba(0,123,255,0.2); }
-      50% { text-shadow: 0 0 40px rgba(0,123,255,0.4); }
-    }
-
-    @keyframes shine {
-      0% { left: -100%; }
-      100% { left: 100%; }
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.5); opacity: 0.5; }
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    .logo-subtitle {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #e0f7fa;
+      letter-spacing: 2px;
     }
 
     @media (max-width: 768px) {
-      .title-text {
-        font-size: 2rem;
+      .logo-wrapper {
+        width: 50px;
+        height: 50px;
       }
-      .title-emoji {
-        font-size: 2rem;
+      
+      .logo-title {
+        font-size: 1.2rem;
       }
-      .line {
-        width: 40px;
-      }
-    }
-
-    /* Landscape Mode */
-    @media (max-height: 500px) and (orientation: landscape) {
-      .hero {
-        padding: 1.2rem;
-      }
-
-      .modern-signup {
-        padding: 1.2rem;
-      }
-
-      .tutor-profile {
-        padding: 1.2rem;
-      }
-
-      .tutor-profile-inner {
-        flex-direction: row;
-        gap: 1.5rem;
-      }
-
-      .tutor-profile-photo img {
-        width: 100px;
-        height: 100px;
-      }
-
-      .achievement-card {
-        padding: 1rem;
+      
+      .logo-subtitle {
+        font-size: 1rem;
       }
     }
   </style>
@@ -2977,14 +1942,14 @@
 <body>
 <nav>
   <div class="logo-container">
-    <img src="https://flagcdn.com/w40/ru.png" alt="Russian Flag" width="24" height="16">
-    <strong>RUSSIAN SETUP</strong>
+    <img src="/static/img/LOGO PNG.png" alt="Russian Setup Logo" style="height:60px; width:auto; margin-right:12px;">
+    <div class="logo-text">
+      <span class="logo-title">RUSSIAN</span>
+      <span class="logo-subtitle">SETUP</span>
+    </div>
   </div>
   <div class="nav-buttons">
-    <a href="https://instagram.com/russiansetup" target="_blank" class="nav-social-button instagram">
-      <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram Icon">
-    </a>
-    <a href="https://t.me/lizaromanovnatutor" target="_blank" class="nav-social-button telegram">
+    <a href="https://t.me/russiansetupschool" target="_blank" class="nav-social-button telegram">
       <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram Icon">
     </a>
   </div>
@@ -2995,7 +1960,7 @@
     <h2 class="signup-title platinum-text">Book a Free Trial Lesson</h2>
     <p class="signup-subtitle">Leave your details and we'll contact you in Telegram</p>
     <p class="signup-alt">Or message us directly on Telegram</p>
-    <a href="https://t.me/lizaromanovnatutor" target="_blank" class="modern-telegram-btn">
+    <a href="https://t.me/russiansetupschool" target="_blank" class="modern-telegram-btn">
       <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram Icon"> Message on Telegram
     </a>
     <form class="modern-signup-form" onsubmit="sendSignupForm(event)">
@@ -3010,7 +1975,7 @@
 
 <section class="about accent">
   <h2 class="platinum-text">Who We Are</h2>
-  <p>Founded in 2024, Russian Setup is a young and ambitious language school accredited by the Russian Ministry of Education. In just one year, we've grown to 200+ international students, thanks to our modern teaching methods, certified native tutors, and personalized approach. Try our 30-minute free trial lesson, and then continue with 60-minute lessons for just $10!</p>
+  <p>Founded in 2024, Russian Setup is a young and ambitious online language school. In just one year, we've grown to 200+ international students, thanks to our modern teaching methods, certified native tutors, and personalized approach. Try our 30-minute free trial lesson, and then continue with 60-minute lessons for just $10!</p>
 </section>
 
 <section class="about accent" id="achievements">
@@ -3018,12 +1983,12 @@
   <div class="achievement-block">
     <div class="achievement-card" style="animation-delay:0.2s">
       <img src="https://img.icons8.com/ios-filled/40/ffffff/students.png" alt="Students icon">
-      <h3 class="counter" data-target="200">0</h3>
+      <h3 class="counter" data-target="218">0</h3>
       <p>Students in 1 Year</p>
     </div>
     <div class="achievement-card" style="animation-delay:0.4s">
       <img src="https://img.icons8.com/ios-filled/40/ffffff/teacher.png" alt="Lessons icon">
-      <h3 class="counter" data-target="50">0</h3>
+      <h3 class="counter" data-target="54">0</h3>
       <p>Lessons Per Week</p>
     </div>
     <div class="achievement-card" style="animation-delay:0.6s">
@@ -3077,36 +2042,36 @@
 <section class="tutor-profile">
   <div class="tutor-profile-inner">
     <div class="tutor-profile-photo">
-      <img src="/tutor-photo/teacher1" alt="Elizaveta Romanovna, certified tutor">
+      <img src="/tutor-photo/teacher1" alt="Anna Klenova, certified tutor">
     </div>
     <div class="tutor-profile-info">
-      <h3>Elizaveta Romanovna</h3>
+      <h3>Anna Klenova</h3>
       <div class="tutor-profile-status">Certified Tutor</div>
-      <p>Native speaker with 6+ years of experience. Certified in TORFL (C2). Specializes in conversational Russian.</p>
+      <p>Native Russian speaker with over 5 years of teaching experience. TORFL C2 certified. Elizaveta focuses on developing conversational skills through structured, engaging lessons, and is known for her ability to adapt to each student's learning style.</p>
     </div>
   </div>
 </section>
 <section class="tutor-profile alt">
   <div class="tutor-profile-inner">
     <div class="tutor-profile-photo">
-      <img src="/tutor-photo/teacher2" alt="Natalia Ivanova, certified translator">
+      <img src="/tutor-photo/teacher2" alt="Natalia Ivanova, certified tutor">
     </div>
     <div class="tutor-profile-info">
       <h3>Natalia Ivanova</h3>
-      <div class="tutor-profile-status">Certified Translator</div>
-      <p>10+ years teaching. Certified translator specializing in business Russian.</p>
+      <div class="tutor-profile-status">Certified Tutor</div>
+      <p>With 6+ years of teaching experience, Natalia is a certified translator with a passion for clear and engaging instruction. She tailors her lessons to each student's goals and learning pace, creating a comfortable and effective learning environment.</p>
     </div>
   </div>
 </section>
 <section class="tutor-profile">
   <div class="tutor-profile-inner">
     <div class="tutor-profile-photo">
-      <img src="/tutor-photo/teacher3" alt="Vyacheslav Matlygin, PhD in Linguistics">
+      <img src="/tutor-photo/teacher3" alt="Vyacheslav Matlygin, certified tutor">
     </div>
     <div class="tutor-profile-info">
       <h3>Vyacheslav Matlygin</h3>
-      <div class="tutor-profile-status">PhD in Linguistics</div>
-      <p>7+ years tutoring. PhD in Linguistics, focusing on advanced grammar.</p>
+      <div class="tutor-profile-status">Certified Tutor</div>
+      <p>4+ years of teaching experience. Vyacheslav offers a personalized approach to each student, helping you make fast, confident progress while discovering the beauty and depth of the Russian language. He also runs a popular channel — Russian with Slava — on Instagram, TikTok, and YouTube, where he shares engaging content with a growing and dedicated audience.</p>
     </div>
   </div>
 </section>
@@ -3117,16 +2082,16 @@
     <div class="col">
       <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Unlock Cultural Treasures</h5>
-          <p class="card-text">Access works by Tolstoy and Dostoevsky. Boost cultural appreciation by 40% (UNESCO, 2023).</p>
+          <h5 class="card-title">Access great culture</h5>
+          <p class="card-text">Read Pushkin and Tolstoy, watch films like Leviathan and Brother, and enjoy music from Kino to modern artists!</p>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Boost Your Career</h5>
-          <p class="card-text">Opportunities in diplomacy and tech. Russia's economy: $1.8T (World Bank).</p>
+          <h5 class="card-title">Career opportunities</h5>
+          <p class="card-text">Russian is useful in a wide range of fields — from business and tech to tourism and education.</p>
         </div>
       </div>
     </div>
@@ -3149,8 +2114,8 @@
     <div class="col">
       <div class="card reason-card">
         <div class="card-body">
-          <h5 class="card-title">Challenge Yourself</h5>
-          <p class="card-text">Improve memory by 20% (studies). Master a unique script.</p>
+          <h5 class="card-title">A new way of thinking</h5>
+          <p class="card-text">Russian trains your brain — its structure develops logic, concentration, and mental flexibility.</p>
         </div>
       </div>
     </div>
@@ -3263,43 +2228,7 @@
 </section>
 
 <footer>
-  <div class="footer-content">
-    <div class="footer-section">
-      <p>© 2025 Russian Setup. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://t.me/lizaromanovnatutor" target="_blank" aria-label="Telegram">
-          <img src="https://img.icons8.com/ios-filled/24/ffffff/telegram-app.png" alt="Telegram icon">
-        </a>
-        <a href="https://instagram.com/russiansetup" target="_blank" aria-label="Instagram">
-          <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram icon">
-        </a>
-      </div>
-    </div>
-    
-    <div class="footer-legal">
-      <div class="legal-links">
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/terms-of-service">Terms of Service</a>
-        <a href="/cookie-policy">Cookie Policy</a>
-        <a href="/refund-policy">Refund Policy</a>
-      </div>
-      
-      <div class="legal-info">
-        <p>Russian Setup is a registered educational service provider.</p>
-        <p>Registration Number: RS-2024-001</p>
-        <p>Address: 123 Education Street, Moscow, Russia, 101000</p>
-        <p>Email: contact@russiansetup.com</p>
-        <p>Phone: +7 (495) 123-45-67</p>
-      </div>
-      
-      <div class="legal-disclaimer">
-        <p>All prices are in USD and include applicable taxes. Payment processing is handled securely through our payment partners.</p>
-        <p>Russian Setup complies with GDPR and other applicable data protection laws. For information about how we handle your data, please see our Privacy Policy.</p>
-        <p>Educational services are provided in accordance with Russian Federation educational standards and regulations.</p>
-        <p class="meta-disclaimer">Please note: Meta Platforms Inc. (Facebook, Instagram) is recognized as an extremist organization in the Russian Federation. We provide links to our social media for informational purposes only, and we are not responsible for any legal consequences that may arise from accessing these platforms.</p>
-      </div>
-    </div>
-  </div>
+  <p>© 2025 Russian Setup. All rights reserved.</p>
 </footer>
 
 <div class="back-to-top" onclick="scrollToTop()" aria-label="Back to top">
@@ -3500,7 +2429,7 @@ const showResult = () => {
     <div class="result-block">
       <h3 class="mb-3">🎉 Score: ${state.score}/${questions[state.currentLevel].length}</h3>
       <p class="mb-4">Your progress: ${progressPercentage.toFixed(0)}% toward ${nextLevel} level. Start with a 30-minute trial lesson for just $10!</p>
-      <a href="https://t.me/lizaromanovnatutor" target="_blank" class="btn btn-success btn-lg">Book a 30-Min Trial for $10</a>
+      <a href="https://t.me/russiansetupschool" target="_blank" class="btn btn-success btn-lg">Book a 30-Min Trial for $10</a>
     </div>
   `;
 };
